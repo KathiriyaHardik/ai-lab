@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="124" viewBox="0 0 1000 124" role="img" aria-labelledby="title desc">
+  <title id="title">Status pipeline</title>
+  <desc id="desc">Wishlist, Applied, Screening, Interview 1, Interview 2, Final, Offer, Accepted. Any open application can close as Rejected or Withdrawn.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .note { font-size: 13px; font-weight: 500; text-anchor: start; fill: #8B949E; }
+    .chev { fill: none; stroke: #8B949E; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: .35;
+            animation: chev 1.75s ease-in-out infinite; }
+    @keyframes chev { 0%, 100% { opacity: .3; } 40% { opacity: 1; } }
+  </style>
+
+  <!-- open stages -->
+  <rect x="8" y="16" width="104" height="36" rx="18" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/><text x="60" y="39" fill="#475569">Wishlist</text>
+  <rect x="134" y="16" width="104" height="36" rx="18" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/><text x="186" y="39" fill="#1E40AF">Applied</text>
+  <rect x="260" y="16" width="104" height="36" rx="18" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/><text x="312" y="39" fill="#92400E">Screening</text>
+  <rect x="386" y="16" width="104" height="36" rx="18" fill="#FFEDD5" stroke="#F97316" stroke-width="1.5"/><text x="438" y="39" fill="#9A3412">Interview 1</text>
+  <rect x="512" y="16" width="104" height="36" rx="18" fill="#FFEDD5" stroke="#F97316" stroke-width="1.5"/><text x="564" y="39" fill="#9A3412">Interview 2</text>
+  <rect x="638" y="16" width="104" height="36" rx="18" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/><text x="690" y="39" fill="#5B21B6">Final</text>
+  <rect x="764" y="16" width="104" height="36" rx="18" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/><text x="816" y="39" fill="#166534">Offer</text>
+  <rect x="890" y="16" width="104" height="36" rx="18" fill="#15803D" stroke="#15803D" stroke-width="1.5"/><text x="942" y="39" fill="#FFFFFF">Accepted</text>
+
+  <!-- arrows between stages, pulsing left to right -->
+  <path class="chev" style="animation-delay:0s"    d="M120 28 L126 34 L120 40"/>
+  <path class="chev" style="animation-delay:.25s"  d="M246 28 L252 34 L246 40"/>
+  <path class="chev" style="animation-delay:.5s"   d="M372 28 L378 34 L372 40"/>
+  <path class="chev" style="animation-delay:.75s"  d="M498 28 L504 34 L498 40"/>
+  <path class="chev" style="animation-delay:1s"    d="M624 28 L630 34 L624 40"/>
+  <path class="chev" style="animation-delay:1.25s" d="M750 28 L756 34 L750 40"/>
+  <path class="chev" style="animation-delay:1.5s"  d="M876 28 L882 34 L876 40"/>
+
+  <!-- closed states -->
+  <text class="note" x="8" y="97">Can close at any stage →</text>
+  <rect x="176" y="76" width="104" height="32" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/><text x="228" y="97" fill="#991B1B">Rejected</text>
+  <rect x="292" y="76" width="104" height="32" rx="16" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/><text x="344" y="97" fill="#4B5563">Withdrawn</text>
+  <text class="note" x="412" y="97">set Stage When Closed, so the interview stats stay correct</text>
+</svg>

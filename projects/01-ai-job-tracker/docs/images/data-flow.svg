@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">What feeds what</title>
+  <desc id="desc">You fill in Applications, Interviews, Contacts and Companies. The Job Search Dashboard, Follow-Ups and Analytics tabs calculate themselves. Companies counts applications and contacts.</desc>
+  <defs>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3B82F6"/>
+    </marker>
+    <marker id="grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8B949E"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .label { font-size: 16px; font-weight: 600; text-anchor: middle; }
+    .cap { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; letter-spacing: 2px; fill: #8B949E; text-anchor: middle; }
+    .wire { fill: none; stroke: #3B82F6; stroke-width: 2; stroke-opacity: .25; }
+    .flow { fill: none; stroke: #3B82F6; stroke-width: 2; stroke-dasharray: 6 10; animation: flow 1.1s linear infinite; }
+    .count { fill: none; stroke: #8B949E; stroke-width: 1.6; stroke-dasharray: 3 5; }
+    @keyframes flow { to { stroke-dashoffset: -32; } }
+  </style>
+
+  <text class="cap" x="190" y="18">YOU FILL IN</text>
+  <text class="cap" x="855" y="18">UPDATES ITSELF</text>
+
+  <!-- wires: faint base line + animated dashes on top -->
+  <g>
+    <path class="wire" d="M290 56 C510 56 510 76 728 76"/>
+    <path class="wire" d="M290 56 C510 56 510 166 728 166"/>
+    <path class="wire" d="M290 56 C510 56 510 256 728 256"/>
+    <path class="wire" d="M290 131 C510 131 510 166 728 166"/>
+    <path class="wire" d="M290 131 C510 131 510 256 728 256"/>
+    <path class="wire" d="M290 206 C510 206 510 166 728 166"/>
+  </g>
+  <g>
+    <path class="flow" d="M290 56 C510 56 510 76 728 76" marker-end="url(#blue)"/>
+    <path class="flow" d="M290 56 C510 56 510 166 728 166" marker-end="url(#blue)"/>
+    <path class="flow" d="M290 56 C510 56 510 256 728 256" marker-end="url(#blue)"/>
+    <path class="flow" d="M290 131 C510 131 510 166 728 166" marker-end="url(#blue)"/>
+    <path class="flow" d="M290 131 C510 131 510 256 728 256" marker-end="url(#blue)"/>
+    <path class="flow" d="M290 206 C510 206 510 166 728 166" marker-end="url(#blue)"/>
+  </g>
+
+  <!-- Companies counts applications and contacts -->
+  <path class="count" d="M90 56 C40 56 40 281 88 281" marker-end="url(#grey)"/>
+  <path class="count" d="M90 206 C62 206 62 281 88 281" marker-end="url(#grey)"/>
+  <text x="34" y="176" font-size="12" fill="#8B949E" text-anchor="middle" transform="rotate(-90 34 176)">counts</text>
+
+  <!-- inputs -->
+  <g>
+    <rect x="90" y="33" width="200" height="46" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5"/>
+    <text class="label" x="190" y="61" fill="#F8FAFC">Applications</text>
+    <rect x="90" y="108" width="200" height="46" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5"/>
+    <text class="label" x="190" y="136" fill="#F8FAFC">Interviews</text>
+    <rect x="90" y="183" width="200" height="46" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5"/>
+    <text class="label" x="190" y="211" fill="#F8FAFC">Contacts</text>
+    <rect x="90" y="258" width="200" height="46" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5"/>
+    <text class="label" x="190" y="286" fill="#F8FAFC">Companies</text>
+  </g>
+
+  <!-- outputs -->
+  <g>
+    <rect x="730" y="50" width="250" height="52" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+    <text class="label" x="855" y="82" fill="#1E3A8A">Job Search Dashboard</text>
+    <rect x="730" y="140" width="250" height="52" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+    <text class="label" x="855" y="172" fill="#1E3A8A">Follow-Ups</text>
+    <rect x="730" y="230" width="250" height="52" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+    <text class="label" x="855" y="262" fill="#1E3A8A">Analytics</text>
+  </g>
+
+  <text x="510" y="318" font-size="12" fill="#8B949E" text-anchor="middle">Settings supplies every dropdown list and threshold</text>
+</svg>

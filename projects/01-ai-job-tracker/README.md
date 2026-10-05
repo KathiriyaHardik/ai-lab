@@ -145,46 +145,11 @@ If preparation is still *Not Started* when an interview is only days away, the c
 
 **The status pipeline.** Each stage has its own colour, and the workbook uses the same colours everywhere:
 
-```mermaid
-flowchart LR
-    W([Wishlist]) --> A([Applied]) --> S([Screening]) --> I1([Interview 1]) --> I2([Interview 2]) --> F([Final]) --> O([Offer]) --> AC([Accepted])
+<p align="center"><img src="docs/images/pipeline.svg" alt="Status pipeline: Wishlist → Applied → Screening → Interview 1 → Interview 2 → Final → Offer → Accepted; any open application can close as Rejected or Withdrawn" width="100%"></p>
 
-    classDef wish fill:#F8FAFC,stroke:#94A3B8,color:#475569
-    classDef applied fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
-    classDef screen fill:#FEF3C7,stroke:#F59E0B,color:#92400E
-    classDef interview fill:#FFEDD5,stroke:#F97316,color:#9A3412
-    classDef final fill:#EDE9FE,stroke:#8B5CF6,color:#5B21B6
-    classDef offer fill:#DCFCE7,stroke:#22C55E,color:#166534
-    classDef accepted fill:#15803D,stroke:#15803D,color:#FFFFFF
-    class W wish
-    class A applied
-    class S screen
-    class I1,I2 interview
-    class F final
-    class O offer
-    class AC accepted
-```
+**What feeds what.** You only type into the four input tabs. The three blue tabs calculate themselves:
 
-Any open application can end as 🔴 **Rejected** or ⚪ **Withdrawn**. When that happens after Screening or later, set *Stage When Closed* so the interview statistics stay correct.
-
-**What feeds what.** You only type into the four ✍️ input tabs, and the three blue tabs calculate themselves. The *Settings* tab supplies every dropdown list and threshold:
-
-```mermaid
-flowchart LR
-    APP["✍️ Applications"] --> DASH["📊 Job Search Dashboard"]
-    APP --> FU["⏰ Follow-Ups"]
-    APP --> AN["🧪 Analytics"]
-    INT["✍️ Interviews"] --> FU
-    INT --> AN
-    CON["✍️ Contacts"] --> FU
-    APP -. counts .-> COM["✍️ Companies"]
-    CON -. counts .-> COM
-
-    classDef input fill:#1E293B,stroke:#60A5FA,color:#F8FAFC
-    classDef output fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
-    class APP,INT,CON,COM input
-    class DASH,FU,AN output
-```
+<p align="center"><img src="docs/images/data-flow.svg" alt="Applications, Interviews and Contacts feed the Job Search Dashboard, Follow-Ups and Analytics; Companies counts applications and contacts" width="100%"></p>
 
 ### Action flags
 
