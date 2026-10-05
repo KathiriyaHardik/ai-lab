@@ -1,0 +1,5 @@
+# your filled-in tracker: personal data stays out of git
+my-*.xlsx
+# Excel lock files and build leftovers
+~$*.xlsx
+*.xlsx.tmp
