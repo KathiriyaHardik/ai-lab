@@ -148,8 +148,6 @@ If preparation is still *Not Started* when an interview is only days away, the c
 ```mermaid
 flowchart LR
     W([Wishlist]) --> A([Applied]) --> S([Screening]) --> I1([Interview 1]) --> I2([Interview 2]) --> F([Final]) --> O([Offer]) --> AC([Accepted])
-    A & S & I1 & I2 & F -.->|closed| R([Rejected])
-    W & A & S & I1 & I2 & F & O -.->|you step back| WD([Withdrawn])
 
     classDef wish fill:#F8FAFC,stroke:#94A3B8,color:#475569
     classDef applied fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
@@ -158,8 +156,6 @@ flowchart LR
     classDef final fill:#EDE9FE,stroke:#8B5CF6,color:#5B21B6
     classDef offer fill:#DCFCE7,stroke:#22C55E,color:#166534
     classDef accepted fill:#15803D,stroke:#15803D,color:#FFFFFF
-    classDef rejected fill:#FEE2E2,stroke:#EF4444,color:#991B1B
-    classDef withdrawn fill:#E5E7EB,stroke:#9CA3AF,color:#4B5563
     class W wish
     class A applied
     class S screen
@@ -167,36 +163,27 @@ flowchart LR
     class F final
     class O offer
     class AC accepted
-    class R rejected
-    class WD withdrawn
 ```
 
-**What feeds what.** You only type into the four input tabs. Everything else calculates itself:
+Any open application can end as 🔴 **Rejected** or ⚪ **Withdrawn**. When that happens after Screening or later, set *Stage When Closed* so the interview statistics stay correct.
+
+**What feeds what.** You only type into the four ✍️ input tabs, and the three blue tabs calculate themselves. The *Settings* tab supplies every dropdown list and threshold:
 
 ```mermaid
 flowchart LR
-    subgraph IN["✍️ You fill in"]
-        APP[Applications]
-        INT[Interviews]
-        CON[Contacts]
-        COM[Companies]
-    end
-    SET[("⚙️ Settings<br/>thresholds & dropdown lists")]
-    subgraph OUT["⚡ Updates itself"]
-        DASH[📊 Job Search Dashboard]
-        FU[⏰ Follow-Ups]
-        AN[🧪 Analytics]
-    end
-    APP --> DASH
-    APP --> FU
-    APP --> AN
-    INT --> FU
+    APP["✍️ Applications"] --> DASH["📊 Job Search Dashboard"]
+    APP --> FU["⏰ Follow-Ups"]
+    APP --> AN["🧪 Analytics"]
+    INT["✍️ Interviews"] --> FU
     INT --> AN
-    CON --> FU
-    APP -. counts .-> COM
+    CON["✍️ Contacts"] --> FU
+    APP -. counts .-> COM["✍️ Companies"]
     CON -. counts .-> COM
-    SET -.-> FU
-    SET -.-> AN
+
+    classDef input fill:#1E293B,stroke:#60A5FA,color:#F8FAFC
+    classDef output fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+    class APP,INT,CON,COM input
+    class DASH,FU,AN output
 ```
 
 ### Action flags
