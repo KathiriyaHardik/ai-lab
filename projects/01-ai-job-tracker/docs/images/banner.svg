@@ -61,7 +61,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="64" y="80" class="mono in" font-size="13" letter-spacing="2.5" fill="#60A5FA">PRACTICE-LAB · PROJECT 01 · EXCEL + GOOGLE SHEETS</text>
+  <text x="64" y="80" class="mono in" font-size="13" letter-spacing="2.5" fill="#60A5FA">HARDIK’S AI LAB · PROJECT 01 · EXCEL + GOOGLE SHEETS</text>
   <text x="62" y="140" class="in d1" font-size="56" font-weight="800" fill="#F8FAFC" letter-spacing="-1">AI Job Application CRM</text>
   <text x="64" y="182" class="in d2" font-size="20" fill="#CBD5E1">A job-search CRM for AI Engineer · Generative AI · Agentic AI roles</text>
   <text x="64" y="210" class="in d3" font-size="17" fill="#94A3B8">Follow-ups, pipeline, analytics and a live dashboard — Stuttgart, Germany &amp; remote</text>

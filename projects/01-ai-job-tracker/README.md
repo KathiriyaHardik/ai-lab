@@ -10,15 +10,15 @@
 [![Tests](https://img.shields.io/badge/tests-141_checks_in_Excel-16A34A?style=for-the-badge)](#-how-it-was-tested)
 [![Macros](https://img.shields.io/badge/macros-none-64748B?style=for-the-badge)](#-compatibility)
 
-[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/practice-lab?style=flat-square&color=2563EB&label=last%20update)](https://github.com/KathiriyaHardik/practice-lab/commits/main)
-[![Repo size](https://img.shields.io/github/repo-size/KathiriyaHardik/practice-lab?style=flat-square&color=0F172A)](https://github.com/KathiriyaHardik/practice-lab)
-[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/practice-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/practice-lab/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=2563EB&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A)](https://github.com/KathiriyaHardik/ai-lab)
+[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab/stargazers)
 
 ### What have I applied to? · Where am I in the process? · What do I need to do today? · What's actually working?
 
 One workbook answers all four questions. It was built for an **AI Engineer · Generative AI · Agentic AI · AI Automation · AI Solutions** job search in Germany 🇩🇪
 
-**[⬇️ Download the tracker](https://github.com/KathiriyaHardik/practice-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx)** &nbsp;·&nbsp;
+**[⬇️ Download the tracker](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx)** &nbsp;·&nbsp;
 [Tour](#-tour) &nbsp;·&nbsp; [Quick start](#-quick-start) &nbsp;·&nbsp; [How it works](#-how-it-works) &nbsp;·&nbsp; [Make it yours](#%EF%B8%8F-make-it-yours) &nbsp;·&nbsp; [Build & test](#-build--test-from-source)
 
 </div>
@@ -119,7 +119,7 @@ If preparation is still *Not Started* when an interview is only days away, the c
 
 ## 🚀 Quick start
 
-1. **[Download `AI_Job_Application_CRM.xlsx`](https://github.com/KathiriyaHardik/practice-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx)** and open it in Excel. For Google Sheets, use *File → Import*.
+1. **[Download `AI_Job_Application_CRM.xlsx`](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx)** and open it in Excel. For Google Sheets, use *File → Import*.
 2. Add a job on **Applications** with Status = `Wishlist`. Copy the **Next ID** shown above the header into Application ID.
 3. When you apply, fill in **Date Applied**, set Status = `Applied`, and add a **Next Action** and **Next Action Date**.
 4. Each morning, open **Follow-Ups** and work through it from the top.
@@ -272,5 +272,5 @@ The test also catches mistakes: running it against a deliberately wrong model pr
 ---
 
 <div align="center">
-<sub>Part of <a href="../../">practice-lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × openpyxl × Microsoft Excel</sub>
+<sub>Part of <a href="../../">Hardik’s AI Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × openpyxl × Microsoft Excel</sub>
 </div>

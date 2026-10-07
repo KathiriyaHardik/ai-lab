@@ -1,40 +1,117 @@
 <div align="center">
 
-# 🧪 practice-lab
+<img src="assets/banner.svg" alt="Hardik's AI Lab: a roadmap of 8 AI projects. 01 Job Tracker is live, 02 Job-Fit Checker is next." width="100%">
 
-**Small practice projects, each finished and each in its own folder with its own README.**
+<br/><br/>
 
-[![Projects](https://img.shields.io/badge/projects-1-2563EB?style=flat-square)](#-projects)
-[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/practice-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/practice-lab/commits/main)
-[![Repo size](https://img.shields.io/github/repo-size/KathiriyaHardik/practice-lab?style=flat-square&color=64748B)](https://github.com/KathiriyaHardik/practice-lab)
-[![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/practice-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/practice-lab)
+[![Shipped](https://img.shields.io/badge/shipped-1_of_8_projects-22C55E?style=for-the-badge)](#%EF%B8%8F-roadmap)
+[![Next up](https://img.shields.io/badge/next_up-02_Job--Fit_Checker-2563EB?style=for-the-badge)](#%EF%B8%8F-roadmap)
+[![Built in public](https://img.shields.io/badge/built_in-public-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
+
+[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
+[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab/stargazers)
+[![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/ai-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/ai-lab)
+
+### Practical AI agents for real work, built in public and explained simply.
+
+[Roadmap](#%EF%B8%8F-roadmap) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
 
 </div>
 
 ---
 
-## 📦 Projects
+## 👋 About this lab
 
-| # | Project | What it is | Stack | Status |
-|:---:|---|---|---|:---:|
-| 01 | [**AI Job Application Tracker**](projects/01-ai-job-tracker/) | A job-search CRM workbook for AI Engineer roles in Germany, with follow-ups, pipeline, analytics and a live dashboard | Python · openpyxl · Excel | ✅ |
+I'm **Hardik**, moving into AI engineering from Germany 🇩🇪. My Master's thesis is on Agentic AI and knowledge management, and I run [ForgeGTM](https://github.com/KathiriyaHardik/forgegtm), a B2B go-to-market agency.
 
-<a href="projects/01-ai-job-tracker/">
-  <img src="projects/01-ai-job-tracker/docs/images/banner.svg" alt="AI Job Application CRM" width="100%">
-</a>
+This lab is where I learn by shipping. **Every couple of weeks I build one small AI tool that solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
+
+Every project is:
+
+- **Useful.** It solves a real problem for job seekers, students or small businesses.
+- **Small.** One working tool, not a half-finished platform.
+- **Explained.** Each project's README covers what it does, how to run it and what I learned.
+- **Tested.** No "it worked on my laptop once".
 
 ---
 
-## 🗂 Layout
+## 🗺️ Roadmap
+
+<p><code>▰▱▱▱▱▱▱▱</code> &nbsp;<b>1 of 8 shipped</b></p>
+
+| # | Project | What it does | AI skill it teaches | For | Status |
+|:---:|---|---|---|:---:|:---:|
+| 01 | [**Job Application Tracker**](projects/01-ai-job-tracker/) | Excel / Google Sheets job-search CRM with follow-ups, pipeline, analytics and a live dashboard | Automation, data modelling, testing | 🎓 | ✅ **Live** |
+| 02 | **Job-Fit Checker** | Paste a job ad and your CV. It gives a Match %, your missing skills and a "Why me?" sentence | Using AI models from code, structured output | 🎓 | 🔜 **Next up** |
+| 03 | **Chat with Your Notes** | Ask questions about your lecture PDFs and get answers with page numbers | RAG: AI that answers from your own documents | 📚 | ⏳ Soon |
+| 04 | **German Letter Explainer** | Take a photo of an official German letter. It explains what it says, what to do and the deadline (not legal advice) | AI that reads images | 🌍 | ⏳ Soon |
+| 05 | **Cover Letter Agent** | Drafts cover letters and recruiter messages in English and German. You approve before anything is sent | Agents with a human in the loop | 🎓 | ⏳ Soon |
+| 06 | **Second-Brain Agent** | Searches your notes and connects related ideas | Knowledge management, vector databases | 📚 | ⏳ Soon |
+| 07 | **Company Research Agent** | Researches a company and drafts a personal outreach message | Several agents working as a team | 💼 | ⏳ Soon |
+| 08 | **First Real Product** | The most popular project, turned into a small web app that real people use | Shipping, users, feedback | 🌍 | ⏳ Soon |
+
+<sub>🎓 Career & job search &nbsp;·&nbsp; 📚 Students & learning &nbsp;·&nbsp; 💼 Business & sales &nbsp;·&nbsp; 🌍 Everyone</sub>
+
+---
+
+## 🚀 Start here
+
+| You are… | Start with |
+|---|---|
+| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets |
+| 🧑‍💻 **Learning to build with AI** | Open any project folder and read its README from top to bottom. Each one explains the *why*, not just the code |
+| 🧭 **A recruiter or hiring manager** | See [Skills this lab covers](#-skills-this-lab-covers). Each skill links to the project that shows it |
+
+---
+
+## 🧠 Skills this lab covers
+
+| Skill | Shown in | Status |
+|---|---|:---:|
+| Python automation & testing | [01 Job Tracker](projects/01-ai-job-tracker/): workbook generator plus 141 automated checks run in real Excel | ✅ |
+| LLM APIs & structured output | 02 Job-Fit Checker | 🔜 |
+| RAG (answers from your own documents) | 03 Chat with Your Notes | ⏳ |
+| Multimodal AI (images → text) | 04 German Letter Explainer | ⏳ |
+| AI agents & human-in-the-loop | 05 Cover Letter Agent | ⏳ |
+| Vector databases & knowledge management | 06 Second-Brain Agent | ⏳ |
+| Multi-agent systems | 07 Company Research Agent | ⏳ |
+| Deploying a real AI product | 08 First Real Product | ⏳ |
+
+---
+
+## 🧱 How each project is built
+
+Every project follows the same five steps, so you always know where to look:
 
 ```text
-projects/
-  01-ai-job-tracker/   # each practice project gets its own numbered folder
-  02-<name>/           # … next one
+1. Problem     → who has this problem, and why it matters
+2. Build       → the smallest version that actually works
+3. Test        → automated checks, not "it worked once"
+4. Explain     → README: what it does, how to run it, what I learned
+5. Share       → a short build log on social media
 ```
 
-## 🔁 Workflow
+```text
+ai-lab/
+├── assets/                    ← lab banner
+└── projects/
+    ├── 01-ai-job-tracker/     ✅ live
+    └── 02-job-fit-checker/    🔜 next
+```
 
-1. Create a folder under `projects/` (e.g. `projects/02-todo-cli`).
-2. Add a short `README.md` in it: the goal, what you learned, and how to run it.
-3. Commit as you go.
+---
+
+## 📣 Follow along
+
+- ⭐ **Star this repo** to keep track of new projects.
+- 📸 **Instagram:** launching soon, with short demos and explainers for every project.
+- 💼 **LinkedIn:** the same build logs, with more detail.
+- 🐙 **GitHub:** [@KathiriyaHardik](https://github.com/KathiriyaHardik)
+
+Got an idea for a project, or found a bug? [Open an issue](https://github.com/KathiriyaHardik/ai-lab/issues). I read every one.
+
+---
+
+<div align="center">
+<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time</sub>
+</div>
