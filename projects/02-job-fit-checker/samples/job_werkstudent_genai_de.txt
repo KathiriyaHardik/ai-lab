@@ -1,0 +1,24 @@
+Werkstudent (m/w/d) Generative KI – Stuttgart, hybrid, 16–20 Std./Woche
+Nordlicht Software GmbH (fiktives Unternehmen, Beispiel zum Testen)
+
+Deine Aufgaben
+- Du entwickelst Prototypen für KI-Assistenten auf Basis großer Sprachmodelle (LLMs)
+- Du testest Prompts und bewertest die Qualität der Antworten
+- Du baust kleine Web-Oberflächen für interne Demos
+- Du dokumentierst deine Ergebnisse für das Team
+
+Dein Profil
+- Laufendes Studium der Informatik, Wirtschaftsinformatik oder eines vergleichbaren Fachs
+- Sehr gute Python-Kenntnisse
+- Erste praktische Erfahrung mit LLMs und Prompt Engineering
+- Sicherer Umgang mit Git
+- Deutschkenntnisse mindestens auf B1-Niveau
+- Fließendes Englisch
+
+Wünschenswert
+- Erfahrung mit RAG (Retrieval-Augmented Generation)
+- Docker
+- Streamlit oder ein ähnliches Web-Framework
+
+Wir bieten
+Flexible Arbeitszeiten, ein modernes Büro in Stuttgart-Mitte und ein junges, hilfsbereites Team.

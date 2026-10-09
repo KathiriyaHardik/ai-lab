@@ -1,0 +1,17 @@
+[project]
+name = "job-fit-checker"
+version = "1.0.0"
+description = "Paste a job ad and your CV: get a Match %, your missing skills and a 'Why me?' sentence. Runs locally with Ollama."
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.6",
+    "pydantic>=2.7",
+    "pypdf>=5.0",
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

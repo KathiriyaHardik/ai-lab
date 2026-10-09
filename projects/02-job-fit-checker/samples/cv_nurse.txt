@@ -1,0 +1,22 @@
+SAM MUSTERMANN
+Fictional sample CV for testing · Stuttgart, Germany · sam.mustermann@example.com
+
+PROFILE
+Registered nurse with seven years of experience in intensive care. Calm under pressure and good at training new colleagues.
+
+EDUCATION
+State-certified nurse training (Pflegefachkraft), 2014 – 2017
+
+EXPERIENCE
+Intensive Care Nurse – Example Hospital Stuttgart, 2017 – today
+- Care for up to three ventilated patients per shift
+- Document patient care in the hospital information system
+- Train and mentor new nurses and nursing students
+- Plan shifts for a team of 18 nurses
+
+SKILLS
+Intensive care, wound care, medication management, patient documentation, shift planning, Microsoft Office
+
+LANGUAGES
+German: native
+English: B2

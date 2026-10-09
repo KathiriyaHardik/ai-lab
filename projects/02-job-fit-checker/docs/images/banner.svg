@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">Job-Fit Checker</title>
+  <desc id="desc">Animated banner: a job ad and a CV flow into a gauge that fills up to the Match %, next to the skills found and missing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#22C55E" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .in { animation: in .9s cubic-bezier(.2,.8,.2,1) backwards; }  /* visible by default; hidden only while waiting to animate */
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .55s; } .d4 { animation-delay: .75s; }
+    @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .pop { transform-box: fill-box; transform-origin: center; animation: pop .5s cubic-bezier(.3,1.5,.5,1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+    .flow { stroke-dasharray: 7 8; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -30; } }
+    /* the final value lives in the stroke-dashoffset attribute; the animation only plays the fill-up */
+    .gauge { animation: gauge 1.8s cubic-bezier(.3,.7,.2,1) 1s backwards; }
+    @keyframes gauge { from { stroke-dashoffset: 490.1; } }
+  </style>
+
+  <!-- background -->
+  <rect width="1280" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#grid)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
+
+  <!-- heading -->
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#60A5FA">HARDIK’S AI LAB · PROJECT 02</text>
+  <text x="87" y="138" class="in d1" font-size="60" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Job-Fit Checker</text>
+  <text class="in d2" font-size="21" fill="#CBD5E1">
+    <tspan x="90" y="182">Paste a job ad and your CV. Get your Match %, the skills</tspan>
+    <tspan x="90" y="210">you’re missing and a “Why me?” sentence for your letter.</tspan>
+  </text>
+
+  <!-- skill pills -->
+  <g font-size="15" font-weight="600">
+    <g class="pop" style="animation-delay:1.3s">
+      <rect x="90" y="240" width="104" height="34" rx="17" fill="#14532D" stroke="#22C55E"/>
+      <text x="142" y="262" text-anchor="middle" fill="#BBF7D0">✓ Python</text>
+    </g>
+    <g class="pop" style="animation-delay:1.45s">
+      <rect x="206" y="240" width="86" height="34" rx="17" fill="#14532D" stroke="#22C55E"/>
+      <text x="249" y="262" text-anchor="middle" fill="#BBF7D0">✓ RAG</text>
+    </g>
+    <g class="pop" style="animation-delay:1.6s">
+      <rect x="304" y="240" width="104" height="34" rx="17" fill="#14532D" stroke="#22C55E"/>
+      <text x="356" y="262" text-anchor="middle" fill="#BBF7D0">✓ Docker</text>
+    </g>
+    <g class="pop" style="animation-delay:1.75s">
+      <rect x="420" y="240" width="104" height="34" rx="17" fill="#14532D" stroke="#22C55E"/>
+      <text x="472" y="262" text-anchor="middle" fill="#BBF7D0">✓ German</text>
+    </g>
+    <g class="pop" style="animation-delay:1.9s">
+      <rect x="536" y="240" width="132" height="34" rx="17" fill="#450A0A" stroke="#EF4444"/>
+      <text x="602" y="262" text-anchor="middle" fill="#FECACA">✗ Kubernetes</text>
+    </g>
+  </g>
+
+  <text x="90" y="326" class="mono in d4" font-size="12.5" letter-spacing="1.5" fill="#64748B">RUNS 100% ON YOUR MAC · OLLAMA · €0 · ENGLISH + DEUTSCH</text>
+
+  <!-- inputs -->
+  <g class="in d3">
+    <rect x="744" y="70" width="150" height="112" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <text x="760" y="95" class="mono" font-size="11" letter-spacing="1.5" fill="#60A5FA">JOB AD</text>
+    <g fill="#334155">
+      <rect x="760" y="108" width="118" height="6" rx="3"/>
+      <rect x="760" y="122" width="96" height="6" rx="3"/>
+      <rect x="760" y="136" width="110" height="6" rx="3"/>
+      <rect x="760" y="150" width="78" height="6" rx="3"/>
+      <rect x="760" y="164" width="102" height="6" rx="3"/>
+    </g>
+    <rect x="744" y="198" width="150" height="112" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <text x="760" y="223" class="mono" font-size="11" letter-spacing="1.5" fill="#A78BFA">YOUR CV</text>
+    <g fill="#334155">
+      <rect x="760" y="236" width="88" height="6" rx="3"/>
+      <rect x="760" y="250" width="118" height="6" rx="3"/>
+      <rect x="760" y="264" width="104" height="6" rx="3"/>
+      <rect x="760" y="278" width="114" height="6" rx="3"/>
+      <rect x="760" y="292" width="70" height="6" rx="3"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round">
+    <path d="M900 126 C 950 126, 955 172, 994 182" class="flow"/>
+    <path d="M900 254 C 950 254, 955 208, 994 198" class="flow"/>
+  </g>
+
+  <!-- gauge -->
+  <g transform="translate(1090 190)">
+    <circle r="78" fill="#0F172A" stroke="#1E293B" stroke-width="14"/>
+    <circle r="78" fill="none" stroke="#22C55E" stroke-width="14" stroke-linecap="round"
+            stroke-dasharray="490.1" stroke-dashoffset="53.9" transform="rotate(-90)" class="gauge"/>
+    <text y="12" text-anchor="middle" font-size="44" font-weight="800" fill="#F8FAFC">89%</text>
+    <text y="40" text-anchor="middle" class="mono" font-size="11.5" letter-spacing="1.5" fill="#4ADE80">STRONG MATCH</text>
+  </g>
+  <text x="1090" y="306" text-anchor="middle" class="mono in d4" font-size="11" letter-spacing="1" fill="#64748B">every claim proof-checked</text>
+</svg>

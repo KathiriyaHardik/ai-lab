@@ -1,0 +1,33 @@
+ALEX MUSTER
+Fictional sample CV for testing · Stuttgart, Germany · alex.muster@example.com
+
+PROFILE
+Master's student in Information Systems who builds practical tools with large language models. Looking for a junior role in applied AI.
+
+EDUCATION
+M.Sc. Information Systems, Example University, 2024 – expected 2026
+Thesis: Evaluating chatbots for customer support
+B.Sc. Computer Engineering, 2019 – 2023
+
+EXPERIENCE
+Working Student, AI Prototyping – Example Mobility GmbH, Stuttgart, 2025 – today
+- Built a RAG chatbot in Python with LangChain and a Chroma vector database that answers questions from 2,000 internal PDF pages
+- Connected the chatbot to the OpenAI API and to local models running in Ollama
+- Packaged the service with Docker and deployed it on an internal server
+- Wrote automated tests with pytest and reviewed pull requests on GitHub
+
+Student Assistant, Data Lab – University, 2023 – 2024
+- Cleaned survey data with Python and pandas
+- Built dashboards for researchers
+
+PROJECTS
+- Expense Tracker: Streamlit web app with automated tests
+- Prompt testing notebook that compares answers from three different LLMs
+
+SKILLS
+Python (4 years), pandas, FastAPI, LangChain, Chroma, OpenAI API, Ollama, prompt engineering, Docker, Git and GitHub, pytest, SQL, Streamlit
+
+LANGUAGES
+English: C1 (fluent)
+German: B1
+Spanish: A2

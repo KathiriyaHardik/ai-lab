@@ -1,0 +1,29 @@
+Junior AI Engineer (m/f/d) – Stuttgart or remote within Germany
+Brightline Analytics GmbH (fictional company, sample for testing)
+
+About the role
+We build AI assistants that help mid-sized manufacturers find answers in their own documents. You will join a team of five engineers and take features from first prototype to production.
+
+What you will do
+- Build chat assistants on top of large language models (LLMs)
+- Design retrieval-augmented generation (RAG) pipelines over customer PDFs and wikis
+- Package services with Docker and ship them through our CI pipeline
+- Measure answer quality with automated evaluations
+
+What you bring
+- A Master's degree (or final year) in Computer Science, Information Systems or a similar field
+- Strong Python skills
+- Hands-on experience building applications with LLM APIs
+- Experience with RAG or vector databases
+- Docker
+- Git and code reviews
+- Very good English, written and spoken
+
+Nice to have
+- Kubernetes
+- Cloud experience with AWS or Azure
+- LangChain or LlamaIndex
+- German at B1 level or better
+
+What we offer
+30 days of holiday, a learning budget, flexible hours and a small, friendly team.

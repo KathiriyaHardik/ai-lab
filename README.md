@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Hardik's AI Lab: a roadmap of 8 AI projects. 01 Job Tracker is live, 02 Job-Fit Checker is next." width="100%">
+<img src="assets/banner.svg" alt="Hardik's AI Lab: a roadmap of 8 AI projects. 01 Job Tracker and 02 Job-Fit Checker are live, 03 Chat with Your Notes is next." width="100%">
 
 <br/><br/>
 
-[![Shipped](https://img.shields.io/badge/shipped-1_of_8_projects-22C55E?style=for-the-badge)](#%EF%B8%8F-roadmap)
-[![Next up](https://img.shields.io/badge/next_up-02_Job--Fit_Checker-2563EB?style=for-the-badge)](#%EF%B8%8F-roadmap)
+[![Shipped](https://img.shields.io/badge/shipped-2_of_8_projects-22C55E?style=for-the-badge)](#%EF%B8%8F-roadmap)
+[![Next up](https://img.shields.io/badge/next_up-03_Chat_with_Your_Notes-2563EB?style=for-the-badge)](#%EF%B8%8F-roadmap)
 [![Built in public](https://img.shields.io/badge/built_in-public-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
 
 [![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
@@ -37,13 +37,13 @@ Every project is:
 
 ## 🗺️ Roadmap
 
-<p><code>▰▱▱▱▱▱▱▱</code> &nbsp;<b>1 of 8 shipped</b></p>
+<p><code>▰▰▱▱▱▱▱▱</code> &nbsp;<b>2 of 8 shipped</b></p>
 
 | # | Project | What it does | AI skill it teaches | For | Status |
 |:---:|---|---|---|:---:|:---:|
 | 01 | [**Job Application Tracker**](projects/01-ai-job-tracker/) | Excel / Google Sheets job-search CRM with follow-ups, pipeline, analytics and a live dashboard | Automation, data modelling, testing | 🎓 | ✅ **Live** |
-| 02 | **Job-Fit Checker** | Paste a job ad and your CV. It gives a Match %, your missing skills and a "Why me?" sentence | Using AI models from code, structured output | 🎓 | 🔜 **Next up** |
-| 03 | **Chat with Your Notes** | Ask questions about your lecture PDFs and get answers with page numbers | RAG: AI that answers from your own documents | 📚 | ⏳ Soon |
+| 02 | [**Job-Fit Checker**](projects/02-job-fit-checker/) | Paste a job ad and your CV. It gives a Match %, your missing skills and a "Why me?" sentence. Runs on your own computer, free | Using AI models from code, structured output, testing AI answers | 🎓 | ✅ **Live** |
+| 03 | **Chat with Your Notes** | Ask questions about your lecture PDFs and get answers with page numbers | RAG: AI that answers from your own documents | 📚 | 🔜 **Next up** |
 | 04 | **German Letter Explainer** | Take a photo of an official German letter. It explains what it says, what to do and the deadline (not legal advice) | AI that reads images | 🌍 | ⏳ Soon |
 | 05 | **Cover Letter Agent** | Drafts cover letters and recruiter messages in English and German. You approve before anything is sent | Agents with a human in the loop | 🎓 | ⏳ Soon |
 | 06 | **Second-Brain Agent** | Searches your notes and connects related ideas | Knowledge management, vector databases | 📚 | ⏳ Soon |
@@ -58,7 +58,7 @@ Every project is:
 
 | You are… | Start with |
 |---|---|
-| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets |
+| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets. Then check each job with the [Job-Fit Checker](projects/02-job-fit-checker/) before you apply |
 | 🧑‍💻 **Learning to build with AI** | Open any project folder and read its README from top to bottom. Each one explains the *why*, not just the code |
 | 🧭 **A recruiter or hiring manager** | See [Skills this lab covers](#-skills-this-lab-covers). Each skill links to the project that shows it |
 
@@ -69,8 +69,9 @@ Every project is:
 | Skill | Shown in | Status |
 |---|---|:---:|
 | Python automation & testing | [01 Job Tracker](projects/01-ai-job-tracker/): workbook generator plus 141 automated checks run in real Excel | ✅ |
-| LLM APIs & structured output | 02 Job-Fit Checker | 🔜 |
-| RAG (answers from your own documents) | 03 Chat with Your Notes | ⏳ |
+| LLM APIs & structured output | [02 Job-Fit Checker](projects/02-job-fit-checker/): local AI with Ollama, answers forced into a JSON shape, every claim checked against the CV | ✅ |
+| Testing AI answers (evals) | [02 Job-Fit Checker](projects/02-job-fit-checker/): 47 fast tests with a fake AI plus 11 quality checks with the real model | ✅ |
+| RAG (answers from your own documents) | 03 Chat with Your Notes | 🔜 |
 | Multimodal AI (images → text) | 04 German Letter Explainer | ⏳ |
 | AI agents & human-in-the-loop | 05 Cover Letter Agent | ⏳ |
 | Vector databases & knowledge management | 06 Second-Brain Agent | ⏳ |
@@ -96,7 +97,8 @@ ai-lab/
 ├── assets/                    ← lab banner
 └── projects/
     ├── 01-ai-job-tracker/     ✅ live
-    └── 02-job-fit-checker/    🔜 next
+    ├── 02-job-fit-checker/    ✅ live
+    └── 03-chat-with-notes/    🔜 next
 ```
 
 ---

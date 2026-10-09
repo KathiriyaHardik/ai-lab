@@ -1,0 +1,25 @@
+JORDAN BEISPIEL
+Fictional sample CV for testing · Munich, Germany · jordan.beispiel@example.com
+
+PROFILE
+Data analyst with three years of experience turning sales data into clear reports for management.
+
+EDUCATION
+B.Sc. Business Economics, 2017 – 2021
+
+EXPERIENCE
+Data Analyst – Sample Retail AG, Munich, 2021 – today
+- Wrote SQL queries to combine sales data from four systems
+- Built weekly Power BI dashboards for 40 store managers
+- Automated Excel reports with Python and pandas, saving 6 hours per week
+- Kept analysis scripts in Git
+
+Intern, Controlling – Example Insurance GmbH, 2020
+- Prepared monthly cost reports in Excel
+
+SKILLS
+SQL, Power BI, Excel, Python (pandas, matplotlib), Git, basic statistics
+
+LANGUAGES
+German: native
+English: C1
