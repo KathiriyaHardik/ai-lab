@@ -1,0 +1,22 @@
+[project]
+name = "letter-explainer"
+version = "1.0.0"
+description = "Take a photo of an official German letter: get what it says, what to do and the deadline, in simple words. Runs locally with Ollama."
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.6",
+    "pillow>=11.0",
+    "pillow-heif>=1.0",  # iPhone photos (.heic)
+    "pydantic>=2.7",
+    "pypdfium2>=4.30",  # reads text from PDFs and turns scanned pages into images
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+dev = [
+    "fpdf2>=2.8",  # only for make_samples.py
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

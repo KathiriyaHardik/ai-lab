@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">German Letter Explainer</title>
+  <desc id="desc">Animated banner: a photo of an official German letter turns into cards with the deadline, the days left and the amount to pay.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .in { animation: in .9s cubic-bezier(.2,.8,.2,1) backwards; }  /* visible by default; hidden only while waiting to animate */
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .55s; } .d4 { animation-delay: .75s; }
+    @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .pop { transform-box: fill-box; transform-origin: center; animation: pop .5s cubic-bezier(.3,1.5,.5,1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+    .flow { stroke-dasharray: 7 8; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -30; } }
+  </style>
+
+  <!-- background -->
+  <rect width="1280" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#grid)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
+
+  <!-- heading -->
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#FBBF24">HARDIK’S AI LAB · PROJECT 04</text>
+  <text x="87" y="138" class="in d1" font-size="56" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">German Letter Explainer</text>
+  <text class="in d2" font-size="21" fill="#CBD5E1">
+    <tspan x="90" y="182">Take a photo of an official German letter. Get what it</tspan>
+    <tspan x="90" y="210">says, what to do and the deadline, in simple words.</tspan>
+  </text>
+
+  <!-- pipeline -->
+  <g font-size="14" font-weight="600" fill="#E2E8F0">
+    <g class="pop" style="animation-delay:1.1s">
+      <rect x="90" y="242" width="72" height="32" rx="16" fill="#1E293B" stroke="#475569"/>
+      <text x="126" y="263" text-anchor="middle">photo</text>
+    </g>
+    <g class="pop" style="animation-delay:1.25s">
+      <rect x="186" y="242" width="96" height="32" rx="16" fill="#2E1065" stroke="#A78BFA"/>
+      <text x="234" y="263" text-anchor="middle" fill="#DDD6FE">AI reads</text>
+    </g>
+    <g class="pop" style="animation-delay:1.4s">
+      <rect x="306" y="242" width="176" height="32" rx="16" fill="#172554" stroke="#60A5FA"/>
+      <text x="394" y="263" text-anchor="middle" fill="#BFDBFE">Python finds € + dates</text>
+    </g>
+    <g class="pop" style="animation-delay:1.55s">
+      <rect x="506" y="242" width="96" height="32" rx="16" fill="#2E1065" stroke="#A78BFA"/>
+      <text x="554" y="263" text-anchor="middle" fill="#DDD6FE">AI explains</text>
+    </g>
+    <g class="pop" style="animation-delay:1.7s">
+      <rect x="626" y="242" width="96" height="32" rx="16" fill="#14532D" stroke="#22C55E"/>
+      <text x="674" y="263" text-anchor="middle" fill="#BBF7D0">days left</text>
+    </g>
+  </g>
+  <g fill="#64748B" font-size="14" text-anchor="middle" class="in d3">
+    <text x="174" y="263">›</text><text x="294" y="263">›</text><text x="494" y="263">›</text><text x="614" y="263">›</text>
+  </g>
+
+  <text x="90" y="326" class="mono in d4" font-size="12.5" letter-spacing="1.5" fill="#64748B">MULTIMODAL · RUNS 100% ON YOUR MAC · OLLAMA · €0 · NOT LEGAL ADVICE</text>
+
+  <!-- the letter photo -->
+  <g class="in d3" transform="rotate(-5 820 190)">
+    <rect x="752" y="66" width="140" height="196" rx="4" fill="#F1F5F9"/>
+    <text x="764" y="86" font-size="8" font-weight="700" fill="#0F172A">Finanzamt Beispielstadt</text>
+    <g fill="#CBD5E1">
+      <rect x="764" y="100" width="54" height="4" rx="2"/>
+      <rect x="764" y="108" width="46" height="4" rx="2"/>
+      <rect x="840" y="100" width="40" height="4" rx="2"/>
+      <rect x="764" y="128" width="112" height="5" rx="2" fill="#94A3B8"/>
+      <rect x="764" y="142" width="116" height="4" rx="2"/>
+      <rect x="764" y="150" width="104" height="4" rx="2"/>
+      <rect x="762" y="160" width="122" height="22" rx="3" fill="#FDE68A"/>
+      <rect x="764" y="192" width="110" height="4" rx="2"/>
+      <rect x="764" y="200" width="96" height="4" rx="2"/>
+      <rect x="764" y="208" width="112" height="4" rx="2"/>
+      <rect x="764" y="228" width="60" height="4" rx="2"/>
+    </g>
+    <text x="767" y="169" font-size="7.5" fill="#78350F">noch 1.234,56 € zahlen</text>
+    <text x="767" y="178.5" font-size="7.5" fill="#78350F">bis zum 09.11.2026</text>
+  </g>
+  <path d="M896 170 C 920 170, 924 150, 946 150" fill="none" stroke="#FDE68A" stroke-opacity=".7" stroke-width="2" stroke-linecap="round" class="flow"/>
+
+  <!-- cards -->
+  <g class="pop" style="animation-delay:1.2s">
+    <rect x="952" y="70" width="268" height="72" rx="14" fill="#451A03" stroke="#F59E0B"/>
+    <text x="970" y="98" font-size="15" font-weight="700" fill="#FDE68A">⏰ Pay by 09.11.2026</text>
+    <text x="970" y="124" font-size="14" fill="#FCD34D">28 days left</text>
+  </g>
+  <g class="pop" style="animation-delay:1.6s">
+    <rect x="952" y="154" width="268" height="52" rx="14" fill="#14532D" stroke="#22C55E"/>
+    <text x="970" y="186" font-size="15" font-weight="700" fill="#BBF7D0">💶 To pay: 1.234,56 €</text>
+  </g>
+  <g class="pop" style="animation-delay:2s">
+    <rect x="952" y="218" width="268" height="52" rx="14" fill="#172554" stroke="#60A5FA"/>
+    <text x="970" y="242" font-size="13" font-weight="600" fill="#BFDBFE">Only if you disagree: object</text>
+    <text x="970" y="260" font-size="13" fill="#93C5FD">to be safe by 06.11.2026</text>
+  </g>
+  <text x="1086" y="300" text-anchor="middle" class="mono in d4" font-size="11" letter-spacing="1" fill="#64748B">dates and € straight from the letter</text>
+</svg>
