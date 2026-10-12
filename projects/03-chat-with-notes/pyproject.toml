@@ -1,0 +1,21 @@
+[project]
+name = "chat-with-notes"
+version = "1.0.0"
+description = "Ask questions about your lecture PDFs and get answers with page numbers. Runs locally with Ollama."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "ollama>=0.6",
+    "pydantic>=2.7",
+    "pypdf>=5.0",
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+dev = [
+    "fpdf2>=2.8",  # only for make_samples.py
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
