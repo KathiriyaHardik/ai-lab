@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">Cover Letter Agent</title>
+  <desc id="desc">Animated banner: the agent writes a draft, Python checks it, the agent fixes it in a loop, and a person approves it at the end.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#22C55E" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#FBBF24"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .in { animation: in .9s cubic-bezier(.2,.8,.2,1) backwards; }  /* visible by default; hidden only while waiting to animate */
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .55s; } .d4 { animation-delay: .75s; }
+    @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .pop { transform-box: fill-box; transform-origin: center; animation: pop .5s cubic-bezier(.3,1.5,.5,1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+    .flow { stroke-dasharray: 7 8; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -30; } }
+  </style>
+
+  <!-- background -->
+  <rect width="1280" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#grid)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
+
+  <!-- heading -->
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#4ADE80">HARDIK’S AI LAB · PROJECT 05</text>
+  <text x="87" y="138" class="in d1" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Cover Letter Agent</text>
+  <text class="in d2" font-size="21" fill="#CBD5E1">
+    <tspan x="90" y="182">It plans, writes, checks and fixes your cover letter,</tspan>
+    <tspan x="90" y="210">and waits for your OK at every step. Nothing is sent.</tspan>
+  </text>
+
+  <!-- the steps -->
+  <g font-size="14" font-weight="600" fill="#E2E8F0">
+    <g class="pop" style="animation-delay:1.0s">
+      <rect x="90" y="242" width="62" height="32" rx="16" fill="#2E1065" stroke="#A78BFA"/>
+      <text x="121" y="263" text-anchor="middle" fill="#DDD6FE">plan</text>
+    </g>
+    <g class="pop" style="animation-delay:1.15s">
+      <rect x="176" y="242" width="72" height="32" rx="16" fill="#14532D" stroke="#22C55E"/>
+      <text x="212" y="263" text-anchor="middle" fill="#BBF7D0">✋ you</text>
+    </g>
+    <g class="pop" style="animation-delay:1.3s">
+      <rect x="272" y="242" width="64" height="32" rx="16" fill="#2E1065" stroke="#A78BFA"/>
+      <text x="304" y="263" text-anchor="middle" fill="#DDD6FE">write</text>
+    </g>
+    <g class="pop" style="animation-delay:1.45s">
+      <rect x="360" y="242" width="72" height="32" rx="16" fill="#172554" stroke="#60A5FA"/>
+      <text x="396" y="263" text-anchor="middle" fill="#BFDBFE">check</text>
+    </g>
+    <g class="pop" style="animation-delay:1.6s">
+      <rect x="456" y="242" width="54" height="32" rx="16" fill="#451A03" stroke="#F59E0B"/>
+      <text x="483" y="263" text-anchor="middle" fill="#FDE68A">fix</text>
+    </g>
+    <g class="pop" style="animation-delay:1.75s">
+      <rect x="534" y="242" width="72" height="32" rx="16" fill="#14532D" stroke="#22C55E"/>
+      <text x="570" y="263" text-anchor="middle" fill="#BBF7D0">✋ you</text>
+    </g>
+  </g>
+  <g fill="#64748B" font-size="14" text-anchor="middle" class="in d3">
+    <text x="164" y="263">›</text><text x="260" y="263">›</text><text x="348" y="263">›</text><text x="444" y="263">›</text><text x="522" y="263">›</text>
+  </g>
+  <!-- fix goes back to check -->
+  <path d="M483 276 C 483 298, 396 298, 396 280" fill="none" stroke="#FBBF24" stroke-width="1.8" class="flow" marker-end="url(#arrow)"/>
+
+  <text x="90" y="336" class="mono in d4" font-size="12.5" letter-spacing="1.5" fill="#64748B">AGENTS · HUMAN IN THE LOOP · OLLAMA · €0 · ENGLISH + DEUTSCH</text>
+
+  <!-- the draft -->
+  <g class="in d3">
+    <rect x="744" y="62" width="196" height="246" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <text x="760" y="88" font-size="11" font-weight="700" fill="#E2E8F0">Application: Junior AI Engineer</text>
+    <text x="760" y="110" font-size="10.5" fill="#94A3B8">Dear Hiring Team,</text>
+    <g fill="#334155">
+      <rect x="760" y="122" width="160" height="6" rx="3"/>
+      <rect x="760" y="134" width="148" height="6" rx="3"/>
+      <rect x="760" y="146" width="156" height="6" rx="3"/>
+      <rect x="760" y="166" width="164" height="6" rx="3"/>
+      <rect x="760" y="178" width="140" height="6" rx="3"/>
+      <rect x="760" y="190" width="152" height="6" rx="3"/>
+      <rect x="760" y="210" width="158" height="6" rx="3"/>
+      <rect x="760" y="222" width="120" height="6" rx="3"/>
+    </g>
+    <text x="760" y="258" font-size="10.5" fill="#94A3B8">Kind regards</text>
+    <text x="760" y="274" font-size="10.5" fill="#94A3B8">Alex Muster</text>
+  </g>
+
+  <!-- what happened to it -->
+  <g class="pop" style="animation-delay:1.2s">
+    <rect x="968" y="62" width="252" height="50" rx="12" fill="#451A03" stroke="#F59E0B"/>
+    <text x="984" y="84" font-size="13" font-weight="700" fill="#FDE68A">Version 1 · too short</text>
+    <text x="984" y="102" font-size="12" fill="#FCD34D">191 words, needs 200: fix it</text>
+  </g>
+  <g class="pop" style="animation-delay:1.6s">
+    <rect x="968" y="124" width="252" height="50" rx="12" fill="#172554" stroke="#60A5FA"/>
+    <text x="984" y="146" font-size="13" font-weight="700" fill="#BFDBFE">Version 2 · checked by Python</text>
+    <text x="984" y="164" font-size="12" fill="#93C5FD">no invented numbers · no placeholders</text>
+  </g>
+  <g class="pop" style="animation-delay:2s">
+    <rect x="968" y="186" width="252" height="50" rx="12" fill="#14532D" stroke="#22C55E"/>
+    <text x="984" y="208" font-size="13" font-weight="700" fill="#BBF7D0">✋ You approve</text>
+    <text x="984" y="226" font-size="12" fill="#86EFAC">.txt + Word file · you send it</text>
+  </g>
+  <path d="M944 140 C 952 140, 956 136, 964 136" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" class="flow"/>
+  <text x="1094" y="268" text-anchor="middle" class="mono in d4" font-size="11" letter-spacing="1" fill="#64748B">every strength proved by your CV</text>
+</svg>

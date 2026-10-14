@@ -1,0 +1,11 @@
+# Keep the tool fully local.
+[browser]
+gatherUsageStats = false  # Streamlit sends anonymous usage stats by default; turn that off
+
+[server]
+address = "localhost"  # only this computer can open the page
+headless = true        # skip Streamlit's first-run email question; open the printed link instead
+maxUploadSize = 10     # MB; a CV is far smaller
+
+[theme]
+primaryColor = "#2563EB"  # the lab's blue instead of Streamlit's red
