@@ -1,0 +1,19 @@
+[project]
+name = "company-research"
+version = "1.0.0"
+description = "A team of AI agents researches a company's website and drafts a personal outreach message, checking every fact. Runs locally with Ollama."
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12",  # turns web pages into text
+    "httpx>=0.27",
+    "ollama>=0.6",
+    "pydantic>=2.7",
+    "pypdf>=5.0",  # CVs uploaded as PDF
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

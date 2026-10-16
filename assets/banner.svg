@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
   <title id="title">Hardik’s AI Lab</title>
-  <desc id="desc">Practical AI agents for real work, built in public and explained simply. Roadmap of 8 projects: 01 Job Tracker, 02 Job-Fit Checker, 03 Chat with Your Notes, 04 German Letter Explainer, 05 Cover Letter Agent and 06 Second-Brain Agent are live, 07 Company Research Agent is next, 08 is coming soon.</desc>
+  <desc id="desc">Practical AI agents for real work, built in public and explained simply. Roadmap of 8 projects: 01 to 07 are live, 08 First Real Product is next.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1120"/>
@@ -55,13 +55,13 @@
   <!-- roadmap track -->
   <g class="in" style="animation-delay:.5s">
     <line x1="90" y1="276" x2="1190" y2="276" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
-    <line x1="90" y1="276" x2="875" y2="276" stroke="#22C55E" stroke-width="3"/>
-    <line x1="875" y1="276" x2="1032" y2="276" stroke="#60A5FA" stroke-width="3" class="flow"/>
+    <line x1="90" y1="276" x2="1032" y2="276" stroke="#22C55E" stroke-width="3"/>
+    <line x1="1032" y1="276" x2="1189" y2="276" stroke="#60A5FA" stroke-width="3" class="flow"/>
     <text x="90" y="232" class="mono" font-size="12" letter-spacing="2" fill="#64748B">ROADMAP</text>
-    <text x="1190" y="232" class="mono" font-size="12" letter-spacing="1" fill="#64748B" text-anchor="end">6 of 8 shipped</text>
+    <text x="1190" y="232" class="mono" font-size="12" letter-spacing="1" fill="#64748B" text-anchor="end">7 of 8 shipped</text>
   </g>
 
-  <!-- 01–06: live -->
+  <!-- 01–07: live -->
   <g class="pop" style="animation-delay:.7s">
     <circle cx="90" cy="276" r="22" fill="#22C55E" opacity=".45" filter="url(#soft)"/>
     <circle cx="90" cy="276" r="16" fill="#22C55E"/>
@@ -92,15 +92,16 @@
     <circle cx="875" cy="276" r="16" fill="#22C55E"/>
     <path d="M868 276 L873 281 L882 271" fill="none" stroke="#052E16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- 07: next up (pulsing) -->
   <g class="pop" style="animation-delay:1.3s">
-    <circle cx="1032" cy="276" r="15" fill="none" stroke="#60A5FA" stroke-width="2.5" class="ping"/>
-    <circle cx="1032" cy="276" r="15" fill="#0F172A" stroke="#60A5FA" stroke-width="3"/>
-    <circle cx="1032" cy="276" r="5" fill="#60A5FA"/>
+    <circle cx="1032" cy="276" r="22" fill="#22C55E" opacity=".45" filter="url(#soft)"/>
+    <circle cx="1032" cy="276" r="16" fill="#22C55E"/>
+    <path d="M1025 276 L1030 281 L1039 271" fill="none" stroke="#052E16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- 08: coming soon -->
-  <g fill="#0F172A" stroke="#475569" stroke-width="2.5">
-    <circle class="pop" style="animation-delay:1.4s" cx="1189" cy="276" r="13"/>
+  <!-- 08: next up (pulsing) -->
+  <g class="pop" style="animation-delay:1.4s">
+    <circle cx="1189" cy="276" r="15" fill="none" stroke="#60A5FA" stroke-width="2.5" class="ping"/>
+    <circle cx="1189" cy="276" r="15" fill="#0F172A" stroke="#60A5FA" stroke-width="3"/>
+    <circle cx="1189" cy="276" r="5" fill="#60A5FA"/>
   </g>
 
   <!-- labels -->
@@ -112,8 +113,8 @@
       <text x="561" y="252" fill="#4ADE80">04</text>
       <text x="718" y="252" fill="#4ADE80">05</text>
       <text x="875" y="252" fill="#4ADE80">06</text>
-      <text x="1032" y="252" fill="#60A5FA">07</text>
-      <text x="1189" y="252">08</text>
+      <text x="1032" y="252" fill="#4ADE80">07</text>
+      <text x="1189" y="252" fill="#60A5FA">08</text>
     </g>
     <g font-size="14" font-weight="600" fill="#94A3B8">
       <text x="90" y="318" fill="#F8FAFC">Job Tracker</text>
@@ -123,7 +124,7 @@
       <text x="718" y="318" fill="#F8FAFC">Cover Letter Agent</text>
       <text x="875" y="318" fill="#F8FAFC">Second Brain</text>
       <text x="1032" y="318" fill="#F8FAFC">Research Agent</text>
-      <text x="1189" y="318">First Product</text>
+      <text x="1189" y="318" fill="#F8FAFC">First Product</text>
     </g>
     <g class="mono" font-size="11" letter-spacing="1">
       <text x="90" y="340" fill="#4ADE80">LIVE</text>
@@ -132,10 +133,8 @@
       <text x="561" y="340" fill="#4ADE80">LIVE</text>
       <text x="718" y="340" fill="#4ADE80">LIVE</text>
       <text x="875" y="340" fill="#4ADE80">LIVE</text>
-      <text x="1032" y="340" fill="#60A5FA">NEXT UP</text>
-      <g fill="#475569">
-        <text x="1189" y="340">SOON</text>
-      </g>
+      <text x="1032" y="340" fill="#4ADE80">LIVE</text>
+      <text x="1189" y="340" fill="#60A5FA">NEXT UP</text>
     </g>
   </g>
 </svg>
