@@ -1,0 +1,3 @@
+# The vector database and your own notes: never commit them
+.vectordb/
+my-*

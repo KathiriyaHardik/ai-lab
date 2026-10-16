@@ -1,0 +1,18 @@
+[project]
+name = "second-brain"
+version = "1.0.0"
+description = "Search your notes by meaning, ask them questions and discover connections between ideas. A local vector database (ChromaDB) and Ollama, free."
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.0",
+    "numpy>=2.0",
+    "ollama>=0.6",
+    "pydantic>=2.7",
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
