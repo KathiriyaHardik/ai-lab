@@ -22,7 +22,7 @@
 
 ## 👋 About this lab
 
-I'm **Hardik**, moving into AI engineering from Germany 🇩🇪. My Master's thesis is on Agentic AI and knowledge management, and I run [ForgeGTM](https://github.com/KathiriyaHardik/forgegtm), a B2B go-to-market agency.
+I'm **Hardik**, moving into AI engineering from Germany 🇩🇪. My Master's thesis is on Agentic AI and knowledge management.
 
 This lab is where I learn by shipping. **Every couple of weeks I build one small AI tool that solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
 
