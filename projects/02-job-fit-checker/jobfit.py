@@ -40,7 +40,7 @@ MAX_ANSWER_TOKENS = 2048
 
 WEIGHT = {"must": 2, "nice": 1}  # a must-have counts twice as much as a nice-to-have
 CREDIT = {"yes": 1.0, "partly": 0.5, "no": 0.0}
-# same bands as the Match % column in 01-ai-job-tracker, so the number can be copied straight over
+# same bands as the Match % column in 01-job-tracker, so the number can be copied straight over
 BANDS = [(90, "Excellent"), (75, "Strong"), (60, "Moderate"), (0, "Low")]
 
 JOB_PROMPT = f"""You read job ads and list what the employer asks for.

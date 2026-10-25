@@ -9,7 +9,7 @@ NovaWerk Lab uses two licences:
 
 The MIT licence in [LICENSE](LICENSE) covers only the code of projects 02 to 07. Everything listed here is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International licence (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) instead:
 
-- **Project 01, the Job Application Tracker:** the whole folder `projects/01-ai-job-tracker/`, including the Excel workbook and the code that builds and tests it
+- **Project 01, the Job Application Tracker:** the whole folder `projects/01-job-tracker/`, including the Excel workbook and the code that builds and tests it
 - **All guides:** every README and its text
 - **All images:** screenshots, banners and diagrams, in `assets/` and every `docs/images/` folder
 - **The website:** the lab's landing page in the `docs/` folder

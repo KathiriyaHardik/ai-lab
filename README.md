@@ -61,7 +61,7 @@ Every project is:
 
 | # | Project | What it does | AI skill it teaches | For | Status |
 |:---:|---|---|---|:---:|:---:|
-| 01 | [**Job Application Tracker**](projects/01-ai-job-tracker/) | Excel / Google Sheets job-search CRM with follow-ups, pipeline, analytics and a live dashboard | Automation, data modelling, testing | 🎓 | ✅ **Live** |
+| 01 | [**Job Application Tracker**](projects/01-job-tracker/) | Excel / Google Sheets job-search CRM with follow-ups, pipeline, analytics and a live dashboard | Automation, data modelling, testing | 🎓 | ✅ **Live** |
 | 02 | [**Job-Fit Checker**](projects/02-job-fit-checker/) | Paste a job ad and your CV. It gives a Match %, your missing skills and a "Why me?" sentence. Runs on your own computer, free | Using AI models from code, structured output, testing AI answers | 🎓 | ✅ **Live** |
 | 03 | [**Chat with Your Notes**](projects/03-chat-with-notes/) | Ask questions about your lecture PDFs and get answers with page numbers. Every quote is checked, and it says so when your notes don't cover a question | RAG: AI that answers from your own documents | 📚 | ✅ **Live** |
 | 04 | [**German Letter Explainer**](projects/04-letter-explainer/) | Take a photo of an official German letter. It explains what it says, what to do, every deadline with the days left and the amount to pay (not legal advice) | AI that reads images | 🌍 | ✅ **Live** |
@@ -81,7 +81,7 @@ Every project is:
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="projects/01-ai-job-tracker/"><img src="assets/gallery/01-job-tracker.webp" alt="Job Search Dashboard in Excel: 13 applications, 6 interviews, 2 offers, today's follow-ups and the pipeline by status" width="100%"></a>
+<a href="projects/01-job-tracker/"><img src="assets/gallery/01-job-tracker.webp" alt="Job Search Dashboard in Excel: 13 applications, 6 interviews, 2 offers, today's follow-ups and the pipeline by status" width="100%"></a>
 <b>01 · Job Application Tracker</b><br/><sub>Your whole job search in one Excel workbook, with a live dashboard</sub>
 </td>
 <td width="50%" valign="top">
@@ -126,7 +126,7 @@ Every project is:
 
 | You are… | Start with |
 |---|---|
-| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/novawerk-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets. Then check each job with the [Job-Fit Checker](projects/02-job-fit-checker/) before you apply, and let the [Cover Letter Agent](projects/05-cover-letter-agent/) draft your letter |
+| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/novawerk-lab/raw/main/projects/01-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets. Then check each job with the [Job-Fit Checker](projects/02-job-fit-checker/) before you apply, and let the [Cover Letter Agent](projects/05-cover-letter-agent/) draft your letter |
 | 📚 **A student** | Add your lecture PDFs to [Chat with Your Notes](projects/03-chat-with-notes/) and ask it questions. Every answer shows the page it comes from. Keep all your notes in the [Second-Brain Agent](projects/06-second-brain/) to search them and connect ideas |
 | 🌍 **New in Germany** | Take a photo of an official letter with the [German Letter Explainer](projects/04-letter-explainer/) to see what it says, what to do and by when |
 | 💼 **Running a business** | Let the [Company Research Agent](projects/07-company-research/) research a company and draft a personal LinkedIn note, with every fact checked |
@@ -139,7 +139,7 @@ Every project is:
 
 | Skill | Shown in | Status |
 |---|---|:---:|
-| Python automation & testing | [01 Job Tracker](projects/01-ai-job-tracker/): workbook generator plus 141 automated checks run in real Excel | ✅ |
+| Python automation & testing | [01 Job Tracker](projects/01-job-tracker/): workbook generator plus 141 automated checks run in real Excel | ✅ |
 | LLM APIs & structured output | [02 Job-Fit Checker](projects/02-job-fit-checker/): local AI with Ollama, answers forced into a JSON shape, every claim checked against the CV | ✅ |
 | Testing AI answers (evals) | [02 Job-Fit Checker](projects/02-job-fit-checker/): 47 fast tests with a fake AI plus 11 quality checks with the real model | ✅ |
 | RAG (answers from your own documents) | [03 Chat with Your Notes](projects/03-chat-with-notes/): embeddings with EmbeddingGemma, cosine-similarity search, answers with checked quotes and page numbers, works across English and German | ✅ |
@@ -164,11 +164,14 @@ Every project follows the same five steps, so you always know where to look:
 ```
 
 ```text
-ai-lab/
+novawerk-lab/
+├── README.md                  ← you are here
+├── LICENSE                    ← MIT, for the code
+├── LICENSE-CONTENT.md         ← CC BY-NC 4.0, for the tracker, guides and images
 ├── assets/                    ← lab banner and gallery screenshots
 ├── docs/                      ← the lab's website (GitHub Pages)
 └── projects/
-    ├── 01-ai-job-tracker/     ✅ live
+    ├── 01-job-tracker/        ✅ live
     ├── 02-job-fit-checker/    ✅ live
     ├── 03-chat-with-notes/    ✅ live
     ├── 04-letter-explainer/   ✅ live
@@ -176,6 +179,20 @@ ai-lab/
     ├── 06-second-brain/       ✅ live
     ├── 07-company-research/   ✅ live
     └── 08-first-product/      🔜 next
+```
+
+Every AI project (02 to 07) uses the same layout inside its folder:
+
+```text
+02-job-fit-checker/
+├── README.md      ← what it does, how to run it, what I learned
+├── app.py         ← the web page you click through (Streamlit)
+├── jobfit.py      ← the main logic: AI calls plus Python checks
+├── evaluate.py    ← quality checks with the real AI
+├── tests/         ← fast automatic checks, with a fake AI
+├── samples/       ← made-up CVs, job ads, letters or notes to try it with
+├── docs/images/   ← banner and screenshots for the README
+└── pyproject.toml ← the Python packages it needs (installed with uv)
 ```
 
 ---

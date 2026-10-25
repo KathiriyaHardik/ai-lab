@@ -60,7 +60,7 @@ Runs with [Ollama](https://ollama.com) on your laptop. The web page only opens o
 <td valign="top">
 
 ### 🔗 Works with project 01
-Same Match % bands as the [Job Application Tracker](../01-ai-job-tracker/), so you can copy the number straight into it.
+Same Match % bands as the [Job Application Tracker](../01-job-tracker/), so you can copy the number straight into it.
 
 </td>
 </tr>
