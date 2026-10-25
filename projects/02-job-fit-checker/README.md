@@ -270,5 +270,5 @@ Tested on a MacBook with an Apple M5 chip and 16 GB of memory.
 ---
 
 <div align="center">
-<sub>Part of <a href="../../">Hardik’s AI Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit</sub>
+<sub>Part of <a href="../../">NovaWerk Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit</sub>
 </div>

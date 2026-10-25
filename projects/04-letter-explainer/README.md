@@ -277,5 +277,5 @@ All 10 checks passed.
 ---
 
 <div align="center">
-<sub>Part of <a href="../../">Hardik’s AI Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit · not legal advice</sub>
+<sub>Part of <a href="../../">NovaWerk Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit · not legal advice</sub>
 </div>

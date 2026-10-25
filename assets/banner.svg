@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
-  <title id="title">Hardik’s AI Lab</title>
+  <title id="title">NovaWerk Lab, built by Hardik Kathiriya</title>
   <desc id="desc">Practical AI agents for real work, built in public and explained simply. Roadmap of 8 projects: 01 to 07 are live, 08 First Real Product is next.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -48,8 +48,8 @@
   <rect width="1280" height="400" rx="18" fill="url(#glowR)"/>
 
   <!-- heading -->
-  <text x="90" y="74" class="mono in" font-size="13" letter-spacing="2.5" fill="#A78BFA">AI ENGINEERING · AGENTS · RAG · AUTOMATION — BUILT IN PUBLIC FROM GERMANY</text>
-  <text x="87" y="142" class="in" style="animation-delay:.15s" font-size="66" font-weight="800" letter-spacing="-1.5" fill="url(#title-grad)">Hardik’s AI Lab<tspan class="caret" fill="#60A5FA" font-weight="400">_</tspan></text>
+  <text x="90" y="74" class="mono in" font-size="13" letter-spacing="2.5" fill="#A78BFA">NOVAWERK AI · AI ENGINEERING · AGENTS · RAG · AUTOMATION — BUILT IN PUBLIC FROM GERMANY</text>
+  <text x="87" y="142" class="in" style="animation-delay:.15s" font-size="66" font-weight="800" letter-spacing="-1.5" fill="url(#title-grad)">NovaWerk Lab<tspan class="caret" fill="#60A5FA" font-weight="400">_</tspan><tspan dx="14" font-size="24" font-weight="500" letter-spacing="0" fill="#94A3B8">by Hardik Kathiriya</tspan></text>
   <text x="90" y="184" class="in" style="animation-delay:.35s" font-size="22" fill="#CBD5E1">Practical AI agents for real work — built in public, explained simply.</text>
 
   <!-- roadmap track -->

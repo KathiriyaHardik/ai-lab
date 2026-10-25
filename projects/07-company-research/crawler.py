@@ -24,7 +24,7 @@ MAX_PAGES = 8
 MAX_DEPTH = 2  # the start page, the pages it links to, and articles behind a news or careers page
 PAUSE = 1.0  # seconds between requests, so the Scout never stresses a website
 MAX_PAGE_CHARS = 6000
-USER_AGENT = "HardiksAILab-CompanyResearch/1.0 (personal research tool; +https://github.com/KathiriyaHardik/ai-lab)"
+USER_AGENT = "NovaWerkLab-CompanyResearch/1.0 (personal research tool; +https://github.com/KathiriyaHardik/ai-lab)"
 
 LEGAL = ("impressum", "imprint", "datenschutz", "privacy", "cookie", "agb", "terms", "legal", "disclaimer")
 NOT_PAGES = ("login", "signin", "account", "cart", "warenkorb", "checkout", "wp-admin")

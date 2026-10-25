@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Hardik's AI Lab: a roadmap of 8 AI projects. 01 to 07 are live: Job Tracker, Job-Fit Checker, Chat with Your Notes, German Letter Explainer, Cover Letter Agent, Second-Brain Agent and Company Research Agent. 08 First Real Product is next." width="100%">
+<img src="assets/banner.svg" alt="NovaWerk Lab, built by Hardik Kathiriya: a roadmap of 8 AI projects. 01 to 07 are live: Job Tracker, Job-Fit Checker, Chat with Your Notes, German Letter Explainer, Cover Letter Agent, Second-Brain Agent and Company Research Agent. 08 First Real Product is next." width="100%">
 
 <br/><br/>
 
@@ -18,6 +18,8 @@
 
 ### Practical AI agents for real work, built in public and explained simply.
 
+The open workshop of **NovaWerk AI**, built by [Hardik Kathiriya](https://www.linkedin.com/in/hardikkathiriya/).
+
 **🌐 [Visit the lab's website](https://kathiriyahardik.github.io/ai-lab/)**: watch each tool run, step by step
 
 [Roadmap](#%EF%B8%8F-roadmap) · [See it in action](#-see-it-in-action) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
@@ -30,7 +32,7 @@
 
 I'm **Hardik**, moving into AI engineering from Germany 🇩🇪. My Master's thesis is on Agentic AI and knowledge management.
 
-This lab is where I learn by shipping. **I build one small AI tool at a time, and each one solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
+**NovaWerk Lab** is where I learn by shipping. It's the open workshop of **NovaWerk AI**, the AI brand I'm building. **I build one small AI tool at a time, and each one solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
 
 Every project is:
 
@@ -181,7 +183,7 @@ ai-lab/
 ## 📣 Follow along
 
 - ⭐ **Star this repo** to keep track of new projects.
-- 📸 **Instagram:** launching soon, with short demos and explainers for every project.
+- 📸 **Instagram:** [@novawerk.ai](https://www.instagram.com/novawerk.ai/), launching soon, with short demos and explainers for every project.
 - 💼 **LinkedIn:** the same build logs, with more detail. [Connect with me](https://www.linkedin.com/in/hardikkathiriya/).
 - 🐙 **GitHub:** [@KathiriyaHardik](https://github.com/KathiriyaHardik)
 
@@ -197,5 +199,5 @@ Got an idea for a project, or found a bug? [Open an issue](https://github.com/Ka
 ---
 
 <div align="center">
-<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time · <a href="LICENSE">code: MIT</a> · <a href="LICENSE-CONTENT.md">tracker, guides and images: CC BY-NC 4.0</a></sub>
+<sub>NovaWerk Lab · part of NovaWerk AI · built in public from Germany 🇩🇪 by Hardik Kathiriya · <a href="LICENSE">code: MIT</a> · <a href="LICENSE-CONTENT.md">tracker, guides and images: CC BY-NC 4.0</a></sub>
 </div>

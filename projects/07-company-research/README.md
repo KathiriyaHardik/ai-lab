@@ -169,7 +169,7 @@ uv run team.py https://www.company.example my-cv.txt --channel email --language 
 ## 🔒 Private and polite
 
 - **The AI runs locally** in Ollama. Your CV never leaves your computer.
-- **Only the company's own public website is read**, with a clear name for the tool (`HardiksAILab-CompanyResearch/1.0`), at most 8 pages, and a 1-second pause between requests.
+- **Only the company's own public website is read**, with a clear name for the tool (`NovaWerkLab-CompanyResearch/1.0`), at most 8 pages, and a 1-second pause between requests.
 - **robots.txt is respected.** If a site asks tools not to read it, the Scout stops.
 - **No people's data:** legal and privacy pages (*Impressum*, *Datenschutz*) are skipped, and the Researcher is told not to note names. The test checks that no names end up in the facts. Who you write to is up to you: you type it in.
 - **Nothing is sent.** Approved messages are saved in `my-messages/` (git-ignored) with the facts and sources.
@@ -252,5 +252,5 @@ Written before the first run. Each website has traps: a page robots.txt forbids,
 ---
 
 <div align="center">
-<sub>Part of <a href="../../">Hardik’s AI Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit</sub>
+<sub>Part of <a href="../../">NovaWerk Lab</a> · built by <a href="https://github.com/KathiriyaHardik">Hardik Kathiriya</a> · Python × Ollama × Streamlit</sub>
 </div>

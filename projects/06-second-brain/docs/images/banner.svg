@@ -36,7 +36,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#F472B6">HARDIK’S AI LAB · PROJECT 06</text>
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#F472B6">NOVAWERK LAB · PROJECT 06</text>
   <text x="87" y="138" class="in d1" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Second-Brain Agent</text>
   <text class="in d2" font-size="21" fill="#CBD5E1">
     <tspan x="90" y="182">Search your notes by meaning, ask them questions,</tspan>

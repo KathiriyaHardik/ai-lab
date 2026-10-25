@@ -36,7 +36,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#60A5FA">HARDIK’S AI LAB · PROJECT 02</text>
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#60A5FA">NOVAWERK LAB · PROJECT 02</text>
   <text x="87" y="138" class="in d1" font-size="60" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Job-Fit Checker</text>
   <text class="in d2" font-size="21" fill="#CBD5E1">
     <tspan x="90" y="182">Paste a job ad and your CV. Get your Match %, the skills</tspan>

@@ -33,7 +33,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#FBBF24">HARDIK’S AI LAB · PROJECT 04</text>
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#FBBF24">NOVAWERK LAB · PROJECT 04</text>
   <text x="87" y="138" class="in d1" font-size="56" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">German Letter Explainer</text>
   <text class="in d2" font-size="21" fill="#CBD5E1">
     <tspan x="90" y="182">Take a photo of an official German letter. Get what it</tspan>

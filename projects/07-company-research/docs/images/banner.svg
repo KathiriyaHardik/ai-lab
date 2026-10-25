@@ -38,7 +38,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#22D3EE">HARDIK’S AI LAB · PROJECT 07</text>
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#22D3EE">NOVAWERK LAB · PROJECT 07</text>
   <text x="87" y="136" class="in d1" font-size="49" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Company Research Agent</text>
   <text class="in d2" font-size="21" fill="#CBD5E1">
     <tspan x="90" y="182">A team of AI agents reads a company’s website, checks</tspan>

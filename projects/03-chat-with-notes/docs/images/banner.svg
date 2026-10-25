@@ -33,7 +33,7 @@
   <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
 
   <!-- heading -->
-  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#A78BFA">HARDIK’S AI LAB · PROJECT 03</text>
+  <text x="90" y="72" class="mono in" font-size="13" letter-spacing="2.5" fill="#A78BFA">NOVAWERK LAB · PROJECT 03</text>
   <text x="87" y="138" class="in d1" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F8FAFC">Chat with Your Notes</text>
   <text class="in d2" font-size="21" fill="#CBD5E1">
     <tspan x="90" y="182">Ask your lecture PDFs a question. Get the answer with</tspan>
