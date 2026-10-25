@@ -6,12 +6,12 @@
 
 [![Shipped](https://img.shields.io/badge/shipped-7_of_8_projects-22C55E?style=for-the-badge)](#%EF%B8%8F-roadmap)
 [![Next up](https://img.shields.io/badge/next_up-08_First_Real_Product-2563EB?style=for-the-badge)](#%EF%B8%8F-roadmap)
-[![Built in public](https://img.shields.io/badge/built_in-public-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
+[![Built in public](https://img.shields.io/badge/built_in-public-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KathiriyaHardik/novawerk-lab/commits/main)
 
-[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
-[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab)
-[![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/ai-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/ai-lab)
-[![Website](https://img.shields.io/badge/website-live-22C55E?style=flat-square&logo=githubpages&logoColor=white)](https://kathiriyahardik.github.io/ai-lab/)
+[![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/novawerk-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/novawerk-lab/commits/main)
+[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/novawerk-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/novawerk-lab)
+[![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/novawerk-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/novawerk-lab)
+[![Website](https://img.shields.io/badge/website-live-22C55E?style=flat-square&logo=githubpages&logoColor=white)](https://kathiriyahardik.github.io/novawerk-lab/)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-22C55E?style=flat-square)](LICENSE)
 [![Content: CC BY-NC 4.0](https://img.shields.io/badge/content-CC_BY--NC_4.0-EF9421?style=flat-square)](LICENSE-CONTENT.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Hardik_Kathiriya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hardikkathiriya/)
@@ -20,7 +20,7 @@
 
 The open workshop of **NovaWerk AI**, built by [Hardik Kathiriya](https://www.linkedin.com/in/hardikkathiriya/).
 
-**🌐 [Visit the lab's website](https://kathiriyahardik.github.io/ai-lab/)**: watch each tool run, step by step
+**🌐 [Visit the lab's website](https://kathiriyahardik.github.io/novawerk-lab/)**: watch each tool run, step by step
 
 [Roadmap](#%EF%B8%8F-roadmap) · [See it in action](#-see-it-in-action) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
 
@@ -126,7 +126,7 @@ Every project is:
 
 | You are… | Start with |
 |---|---|
-| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/ai-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets. Then check each job with the [Job-Fit Checker](projects/02-job-fit-checker/) before you apply, and let the [Cover Letter Agent](projects/05-cover-letter-agent/) draft your letter |
+| 🎓 **Looking for a job** | [Download the Job Application Tracker](https://github.com/KathiriyaHardik/novawerk-lab/raw/main/projects/01-ai-job-tracker/AI_Job_Application_CRM.xlsx). It's free and ready to use in Excel or Google Sheets. Then check each job with the [Job-Fit Checker](projects/02-job-fit-checker/) before you apply, and let the [Cover Letter Agent](projects/05-cover-letter-agent/) draft your letter |
 | 📚 **A student** | Add your lecture PDFs to [Chat with Your Notes](projects/03-chat-with-notes/) and ask it questions. Every answer shows the page it comes from. Keep all your notes in the [Second-Brain Agent](projects/06-second-brain/) to search them and connect ideas |
 | 🌍 **New in Germany** | Take a photo of an official letter with the [German Letter Explainer](projects/04-letter-explainer/) to see what it says, what to do and by when |
 | 💼 **Running a business** | Let the [Company Research Agent](projects/07-company-research/) research a company and draft a personal LinkedIn note, with every fact checked |
@@ -187,7 +187,7 @@ ai-lab/
 - 💼 **LinkedIn:** the same build logs, with more detail. [Connect with me](https://www.linkedin.com/in/hardikkathiriya/).
 - 🐙 **GitHub:** [@KathiriyaHardik](https://github.com/KathiriyaHardik)
 
-Got an idea for a project, or found a bug? [Open an issue](https://github.com/KathiriyaHardik/ai-lab/issues). I read every one.
+Got an idea for a project, or found a bug? [Open an issue](https://github.com/KathiriyaHardik/novawerk-lab/issues). I read every one.
 
 ---
 

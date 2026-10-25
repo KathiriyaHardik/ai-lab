@@ -6,7 +6,7 @@ Everything in this folder, the Job Application Tracker workbook and the code tha
 - ✅ Change it and share your version, with credit and a note on what you changed
 - ❌ Don't sell it, or put it in a paid template pack, course, product or service, without permission
 
-**How to give credit:** "Job Application Tracker by Hardik Kathiriya, NovaWerk Lab (https://github.com/KathiriyaHardik/ai-lab), CC BY-NC 4.0"
+**How to give credit:** "Job Application Tracker by Hardik Kathiriya, NovaWerk Lab (https://github.com/KathiriyaHardik/novawerk-lab), CC BY-NC 4.0"
 
 **Want to use it commercially?** Ask me on [LinkedIn](https://www.linkedin.com/in/hardikkathiriya/).
 

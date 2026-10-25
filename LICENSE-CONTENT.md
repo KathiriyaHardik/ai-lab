@@ -21,7 +21,7 @@ The MIT licence in [LICENSE](LICENSE) covers only the code of projects 02 to 07.
 - ✅ Share your changed version, as long as you give credit and say what you changed
 - ❌ Sell them, or use them in anything you make money from (a paid template, course, product or service), without permission
 
-**How to give credit:** "Hardik Kathiriya, NovaWerk Lab (https://github.com/KathiriyaHardik/ai-lab), CC BY-NC 4.0"
+**How to give credit:** "Hardik Kathiriya, NovaWerk Lab (https://github.com/KathiriyaHardik/novawerk-lab), CC BY-NC 4.0"
 
 **Want to use something commercially?** Ask me on [LinkedIn](https://www.linkedin.com/in/hardikkathiriya/).
 
