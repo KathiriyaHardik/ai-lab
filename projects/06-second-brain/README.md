@@ -8,7 +8,7 @@
 [![ChromaDB](https://img.shields.io/badge/vector_DB-ChromaDB-E11D74?style=for-the-badge)](#-how-it-works)
 [![Ollama](https://img.shields.io/badge/AI-Ollama_·_local-0F172A?style=for-the-badge&logo=ollama&logoColor=white)](#-private-by-design)
 [![Cost](https://img.shields.io/badge/cost-€0-22C55E?style=for-the-badge)](#-quick-start)
-[![Tests](https://img.shields.io/badge/tests-30_fast_%2B_9_AI_checks-16A34A?style=for-the-badge)](#-how-it-was-tested)
+[![Tests](https://img.shields.io/badge/tests-36_fast_%2B_9_AI_checks-16A34A?style=for-the-badge)](#-how-it-was-tested)
 
 ### What did I already write about this? · How do my ideas fit together? · Which notes belong together?
 
@@ -73,7 +73,7 @@ Ollama and ChromaDB run locally. ChromaDB's anonymous usage statistics are switc
 
 <p align="center">
   <img src="docs/images/ask.png" alt="Ask your notes: the question about habits and German vocabulary, the three searches the agent ran, the answer about habit stacking and the quote from 'Book notes: Atomic Habits'" width="88%">
-  <br/><sub><b>Ask your notes.</b> The agent searched three times (the question plus two topics it planned), then answered with a checked quote.</sub>
+  <br/><sub><b>Ask your notes.</b> The agent searched three times (the question plus two topics it planned), then answered with a checked quote. On the left, <b>Browse…</b> opens your computer's folder window to pick your notes.</sub>
 </p>
 
 <p align="center">
@@ -109,7 +109,7 @@ cd projects/06-second-brain
 uv run streamlit run app.py
 ```
 
-Open **http://localhost:8501**. Click **Use the sample notes** to try it, or type the path of your own notes folder on the left.
+Open **http://localhost:8501**. Click **Use the sample notes** to try it, or click **Browse…** on the left to pick your own notes folder in your computer's usual folder window. You can also type its path.
 
 <details>
 <summary><b>⌨️ Use it from the command line instead</b></summary>
@@ -171,7 +171,7 @@ uv run brain.py ask "What did I write about Scrum?" --vault ~/Documents/MyVault 
 
 ## 🧪 How it was tested
 
-**1. Fast tests (30 checks, about 2 seconds, no AI needed)**
+**1. Fast tests (36 checks, about 2 seconds, no AI needed)**
 
 ```bash
 uv run pytest
@@ -184,9 +184,10 @@ A fake Ollama stands in for the AI (its fake embeddings are built from the words
 - **Search and asking:** the right note comes first, tag filters work, the agent's searches are merged without repeats, made-up quotes are dropped, "not found" works, and a stuck model is stopped and retried
 - **Connections:** quotes from both notes are checked, swapped quotes are put back, "not connected" is allowed, and links count in both directions and with aliases
 - **Adding links:** only appends, reuses an existing "## Related" section, never adds a link twice or a link to the note itself
-- **The web page:** Streamlit's `AppTest` copies the sample notes, asks a question, finds connections and adds a link
+- **Browse…:** opens the Mac's own folder window (Tk's on Windows and Linux) where you already are, Cancel changes nothing, a problem tells you to type the path, and the Mac script is valid AppleScript
+- **The web page:** Streamlit's `AppTest` picks a folder with Browse… (with a fake folder window), copies the sample notes, asks a question, finds connections and adds a link
 
-I also broke the code on purpose (not putting swapped quotes back, and not removing a changed note's old chunks before adding new ones) to make sure the tests notice. They did.
+I also broke the code on purpose (not putting swapped quotes back, not removing a changed note's old chunks before adding new ones, treating Cancel as an error, and not filling in the folder you picked) to make sure the tests notice. They did.
 
 **2. Quality test with the real AI (about 2 minutes)**
 

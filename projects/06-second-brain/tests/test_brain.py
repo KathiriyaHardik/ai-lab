@@ -8,6 +8,7 @@ The real models are tested separately by evaluate.py.
 import hashlib
 import json
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -114,6 +115,53 @@ def test_vault_reading_skips_hidden_folders_and_other_files(vault):
 def test_missing_folder():
     with pytest.raises(brain.BrainError, match="doesn't exist"):
         brain.read_vault("/no/such/folder")
+
+
+def fake_window(monkeypatch, returncode=0, stdout="", stderr="", error=None):
+    """Stands in for the computer's folder window: records the command, gives back a prepared result."""
+    calls = []
+
+    def run(command, **kwargs):
+        calls.append(command)
+        if error:
+            raise error
+        return subprocess.CompletedProcess(command, returncode, stdout, stderr)
+    monkeypatch.setattr(brain.subprocess, "run", run)
+    return calls
+
+
+def test_browse_on_a_mac_opens_the_folder_window_where_you_are(monkeypatch, vault):
+    monkeypatch.setattr(brain.sys, "platform", "darwin")
+    calls = fake_window(monkeypatch, stdout="/Users/me/Notes/\n")
+    assert brain.pick_folder(vault) == "/Users/me/Notes"
+    assert calls[0][0] == "osascript" and calls[0][-1] == str(vault)
+
+
+def test_browse_cancel_and_problems(monkeypatch):
+    monkeypatch.setattr(brain.sys, "platform", "darwin")
+    calls = fake_window(monkeypatch, returncode=1, stderr="execution error: User canceled. (-128)")
+    assert brain.pick_folder("/no/such/folder") is None
+    assert calls[0][-1] == str(Path.home())  # a folder that doesn't exist starts the window at home
+    fake_window(monkeypatch, returncode=1, stderr="Not authorised to send Apple events.")
+    with pytest.raises(brain.BrainError, match="Type the folder's path instead"):
+        brain.pick_folder()
+    fake_window(monkeypatch, error=FileNotFoundError("osascript"))
+    with pytest.raises(brain.BrainError, match="couldn't be opened"):
+        brain.pick_folder()
+
+
+def test_browse_on_windows_and_linux_uses_tk_in_its_own_process(monkeypatch):
+    monkeypatch.setattr(brain.sys, "platform", "linux")
+    calls = fake_window(monkeypatch, stdout="\n")  # Tk prints an empty line when you cancel
+    assert brain.pick_folder() is None
+    assert calls[0][:2] == [sys.executable, "-c"] and "askdirectory" in calls[0][2]
+
+
+@pytest.mark.skipif(not shutil.which("osacompile"), reason="needs macOS")
+def test_the_mac_folder_window_script_is_valid_applescript(tmp_path):
+    lines = [a for line in brain.MAC_PICKER for a in ("-e", line)]
+    done = subprocess.run(["osacompile", "-o", str(tmp_path / "picker.scpt"), *lines], capture_output=True, text=True)
+    assert done.returncode == 0, done.stderr
 
 
 def test_short_notes_stay_whole_and_long_ones_are_cut():

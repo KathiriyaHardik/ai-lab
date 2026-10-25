@@ -26,6 +26,17 @@ def use_samples():
     st.session_state.vault = str(brain.SAMPLE_COPY)
 
 
+def browse():
+    """Fill in the folder you pick in your computer's own folder window. Cancel leaves everything as it was."""
+    try:
+        picked = brain.pick_folder(st.session_state.get("vault"))
+    except brain.BrainError as e:
+        st.session_state.browse_error = str(e)
+        return
+    if picked:
+        st.session_state.vault = picked
+
+
 def open_brain(folder):
     """One Brain per notes folder, synced when it's opened. Unchanged notes cost nothing."""
     if st.session_state.get("brain_folder") != folder:
@@ -124,10 +135,14 @@ with st.sidebar:
     st.header("Your notes")
     folder = st.text_input("Folder with Markdown notes (an Obsidian vault works)", key="vault",
                            placeholder="/Users/you/Documents/Notes")
+    st.button("Browse…", on_click=browse, help="Pick the folder in your computer's own folder window")
+    if "browse_error" in st.session_state:
+        st.error(st.session_state.pop("browse_error"))
     st.button("Use the sample notes", on_click=use_samples)
 
 if not folder:
-    st.info("Choose the folder with your notes on the left, or try the sample notes first.")
+    st.info("Choose the folder with your notes on the left: click **Browse…** or type its path. "
+            "Or try the sample notes first.")
     st.stop()
 
 try:

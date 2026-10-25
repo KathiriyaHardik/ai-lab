@@ -25,6 +25,7 @@ import argparse
 import hashlib
 import os
 import re
+import subprocess
 import sys
 import unicodedata
 from dataclasses import dataclass, field
@@ -135,6 +136,38 @@ def read_vault(folder):
         if file.suffix.lower() in NOTE_TYPES and file.is_file() and not any(p.startswith(".") for p in relative.parts):
             notes[relative.as_posix()] = parse_note(relative.as_posix(), file.read_text(errors="replace"))
     return notes
+
+
+FOLDER_PROMPT = "Choose the folder with your notes"
+MAC_PICKER = ["on run argv", "activate",  # activate brings the window in front of the browser
+              f'POSIX path of (choose folder with prompt "{FOLDER_PROMPT}" default location (POSIX file (item 1 of argv)))',
+              "end run"]
+TK_PICKER = f"""import sys, tkinter, tkinter.filedialog
+root = tkinter.Tk(); root.withdraw(); root.attributes("-topmost", True)
+print(tkinter.filedialog.askdirectory(initialdir=sys.argv[1], title="{FOLDER_PROMPT}", mustexist=True))"""
+
+
+def pick_folder(start=None):
+    """Open the computer's own "choose a folder" window. Returns the folder, or None if you cancel.
+    The web page only runs on this computer (server.address = localhost), so the window opens on your screen."""
+    start = Path(start).expanduser() if start else Path.home()
+    if not start.is_dir():
+        start = Path.home()
+    if sys.platform == "darwin":
+        command = ["osascript", *(a for line in MAC_PICKER for a in ("-e", line)), str(start)]
+    else:  # Windows and Linux: Tk's folder window, in its own process because Tk must run on a main thread
+        command = [sys.executable, "-c", TK_PICKER, str(start)]
+    problem = "Your computer's folder window couldn't be opened. Type the folder's path instead."
+    try:
+        done = subprocess.run(command, capture_output=True, text=True)
+    except OSError as e:
+        raise BrainError(problem) from e
+    if done.returncode != 0:
+        if "-128" in done.stderr:  # macOS: you clicked Cancel
+            return None
+        raise BrainError(f"{problem}\n\n{done.stderr.strip()}")
+    picked = done.stdout.strip()
+    return str(Path(picked)) if picked else None
 
 
 def chunks(note, size=CHUNK_CHARS):

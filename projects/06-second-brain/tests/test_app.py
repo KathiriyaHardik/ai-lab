@@ -1,4 +1,5 @@
 """Tests for the web page, using Streamlit's built-in AppTest (no browser, fake AI, real ChromaDB in a temp folder)."""
+import shutil
 import sys
 from pathlib import Path
 
@@ -22,16 +23,43 @@ def fake(monkeypatch, tmp_path):
     return client
 
 
+def click(at, label):
+    next(b for b in at.sidebar.button if b.label == label).click().run()
+
+
 def with_samples():
     at = AppTest.from_file(APP, default_timeout=60).run()
-    at.sidebar.button[0].click().run()  # "Use the sample notes"
+    click(at, "Use the sample notes")
     assert not at.exception and not at.error
     return at
 
 
 def test_start_explains_what_to_do(fake):
     at = AppTest.from_file(APP, default_timeout=60).run()
-    assert "Choose the folder with your notes" in at.info[0].value
+    assert "Choose the folder with your notes" in at.info[0].value and "Browse…" in at.info[0].value
+
+
+def test_browse_fills_in_the_folder_you_pick(fake, monkeypatch, tmp_path):
+    folder = tmp_path / "My Notes"
+    shutil.copytree(brain.SAMPLE_VAULT, folder)
+    monkeypatch.setattr(brain, "pick_folder", lambda start=None: str(folder))
+    at = AppTest.from_file(APP, default_timeout=60).run()
+    click(at, "Browse…")
+    assert at.sidebar.text_input[0].value == str(folder)
+    assert "**24 notes** in the vector database" in at.sidebar.caption[0].value
+
+
+def test_browse_cancelled_or_not_possible(fake, monkeypatch):
+    monkeypatch.setattr(brain, "pick_folder", lambda start=None: None)
+    at = AppTest.from_file(APP, default_timeout=60).run()
+    click(at, "Browse…")
+    assert at.sidebar.text_input[0].value == "" and "Choose the folder" in at.info[0].value and not at.error
+
+    def no_window(start=None):
+        raise brain.BrainError("Your computer's folder window couldn't be opened. Type the folder's path instead.")
+    monkeypatch.setattr(brain, "pick_folder", no_window)
+    click(at, "Browse…")
+    assert "Type the folder's path instead" in at.sidebar.error[0].value
 
 
 def test_sample_notes_are_copied_and_synced(fake):
