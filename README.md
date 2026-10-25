@@ -9,12 +9,14 @@
 [![Built in public](https://img.shields.io/badge/built_in-public-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
 
 [![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
-[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab/stargazers)
+[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab)
 [![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/ai-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/ai-lab)
+[![License: MIT](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)](LICENSE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hardik_Kathiriya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hardikkathiriya/)
 
 ### Practical AI agents for real work, built in public and explained simply.
 
-[Roadmap](#%EF%B8%8F-roadmap) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
+[Roadmap](#%EF%B8%8F-roadmap) · [See it in action](#-see-it-in-action) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
 
 </div>
 
@@ -24,14 +26,26 @@
 
 I'm **Hardik**, moving into AI engineering from Germany 🇩🇪. My Master's thesis is on Agentic AI and knowledge management.
 
-This lab is where I learn by shipping. **Every couple of weeks I build one small AI tool that solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
+This lab is where I learn by shipping. **I build one small AI tool at a time, and each one solves a real problem.** Then I write down exactly how I built it, so you can learn from it, copy it, or build your own.
 
 Every project is:
 
-- **Useful.** It solves a real problem for job seekers, students or small businesses.
+- **Useful.** It solves a real problem for job seekers, students, newcomers to Germany or small businesses.
 - **Small.** One working tool, not a half-finished platform.
 - **Explained.** Each project's README covers what it does, how to run it and what I learned.
 - **Tested.** No "it worked on my laptop once".
+
+---
+
+## 📊 At a glance
+
+| 🧰 **7 tools live** | 🧪 **467 checks, all passing** | 💶 **€0 to run** | 🔒 **Private by design** |
+|:---:|:---:|:---:|:---:|
+| shipped between 5 and 17 October 2026 | 416 automatic checks, plus 51 quality checks with the real AI | free models in [Ollama](https://ollama.com), no account and no API key | the AI runs on your laptop, so your CV, letters and notes never leave it |
+
+**The idea behind every tool:** the AI reads and writes, plain Python checks its work, and you make the decisions. Small AI models make mistakes, so the AI never gets the last word.
+
+**Built with** Python · Ollama (Gemma 4, EmbeddingGemma) · ChromaDB · Streamlit · pydantic · pytest · openpyxl
 
 ---
 
@@ -51,6 +65,54 @@ Every project is:
 | 08 | **First Real Product** | The most popular project, turned into a small web app that real people use | Shipping, users, feedback | 🌍 | 🔜 **Next up** |
 
 <sub>🎓 Career & job search &nbsp;·&nbsp; 📚 Students & learning &nbsp;·&nbsp; 💼 Business & sales &nbsp;·&nbsp; 🌍 Everyone</sub>
+
+---
+
+## 🎬 See it in action
+
+<sub>Real screenshots with made-up sample data. Click one to open the project.</sub>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/01-ai-job-tracker/"><img src="assets/gallery/01-job-tracker.webp" alt="Job Search Dashboard in Excel: 13 applications, 6 interviews, 2 offers, today's follow-ups and the pipeline by status" width="100%"></a>
+<b>01 · Job Application Tracker</b><br/><sub>Your whole job search in one Excel workbook, with a live dashboard</sub>
+</td>
+<td width="50%" valign="top">
+<a href="projects/02-job-fit-checker/"><img src="assets/gallery/02-job-fit-checker.webp" alt="Job-Fit Checker: 89% Strong match for a Junior AI Engineer job, 9 skills the CV has, 2 missing, and a Why me sentence" width="100%"></a>
+<b>02 · Job-Fit Checker</b><br/><sub>A Match %, your missing skills and a "Why me?" sentence</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/03-chat-with-notes/"><img src="assets/gallery/03-chat-with-notes.webp" alt="Chat with Your Notes: questions in English and German answered from lecture PDFs, each with the file and page number" width="100%"></a>
+<b>03 · Chat with Your Notes</b><br/><sub>Answers from your lecture PDFs, with the file and page</sub>
+</td>
+<td width="50%" valign="top">
+<a href="projects/04-letter-explainer/"><img src="assets/gallery/04-letter-explainer.webp" alt="German Letter Explainer: a tax letter explained in simple words, with the amount to pay and two deadlines with the days left" width="100%"></a>
+<b>04 · German Letter Explainer</b><br/><sub>An official letter in simple words, with every deadline</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/05-cover-letter-agent/"><img src="assets/gallery/05-cover-letter-agent.webp" alt="Cover Letter Agent: the checked draft of a cover letter, waiting for your decision to revise or approve it" width="100%"></a>
+<b>05 · Cover Letter Agent</b><br/><sub>Plans, writes, checks and fixes, then waits for your OK</sub>
+</td>
+<td width="50%" valign="top">
+<a href="projects/06-second-brain/"><img src="assets/gallery/06-second-brain.webp" alt="Second-Brain Agent: a question about habits and German vocabulary, the searches the agent planned, and the answer with a quote from the notes" width="100%"></a>
+<b>06 · Second-Brain Agent</b><br/><sub>Search your notes by meaning and find new connections</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/07-company-research/"><img src="assets/gallery/07-company-research.webp" alt="Company Research Agent: a LinkedIn connection note based on checked facts about a company, with all checks passed" width="100%"></a>
+<b>07 · Company Research Agent</b><br/><sub>A team of agents researches a company and drafts your note</sub>
+</td>
+<td width="50%" valign="middle" align="center">
+<b>🔜 08 · First Real Product</b><br/><sub>The most popular project, turned into a small web app that real people use. ⭐ Star the repo to see it ship.</sub>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -97,7 +159,7 @@ Every project follows the same five steps, so you always know where to look:
 
 ```text
 ai-lab/
-├── assets/                    ← lab banner
+├── assets/                    ← lab banner and gallery screenshots
 └── projects/
     ├── 01-ai-job-tracker/     ✅ live
     ├── 02-job-fit-checker/    ✅ live
@@ -115,7 +177,7 @@ ai-lab/
 
 - ⭐ **Star this repo** to keep track of new projects.
 - 📸 **Instagram:** launching soon, with short demos and explainers for every project.
-- 💼 **LinkedIn:** the same build logs, with more detail.
+- 💼 **LinkedIn:** the same build logs, with more detail. [Connect with me](https://www.linkedin.com/in/hardikkathiriya/).
 - 🐙 **GitHub:** [@KathiriyaHardik](https://github.com/KathiriyaHardik)
 
 Got an idea for a project, or found a bug? [Open an issue](https://github.com/KathiriyaHardik/ai-lab/issues). I read every one.
@@ -123,5 +185,5 @@ Got an idea for a project, or found a bug? [Open an issue](https://github.com/Ka
 ---
 
 <div align="center">
-<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time</sub>
+<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time · <a href="LICENSE">MIT licence</a>: use it, change it, share it</sub>
 </div>

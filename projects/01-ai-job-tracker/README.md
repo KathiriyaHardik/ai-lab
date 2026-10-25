@@ -12,7 +12,7 @@
 
 [![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=2563EB&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
 [![Repo size](https://img.shields.io/github/repo-size/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A)](https://github.com/KathiriyaHardik/ai-lab)
-[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab/stargazers)
+[![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab)
 
 ### What have I applied to? · Where am I in the process? · What do I need to do today? · What's actually working?
 
