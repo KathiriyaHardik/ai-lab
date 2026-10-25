@@ -12,6 +12,7 @@ The MIT licence in [LICENSE](LICENSE) covers only the code of projects 02 to 07.
 - **Project 01, the Job Application Tracker:** the whole folder `projects/01-ai-job-tracker/`, including the Excel workbook and the code that builds and tests it
 - **All guides:** every README and its text
 - **All images:** screenshots, banners and diagrams, in `assets/` and every `docs/images/` folder
+- **The website:** the lab's landing page in the `docs/` folder
 - **All sample files:** the fictional CVs, job ads, letters, lecture notes, notes and websites in every `samples/` folder
 
 ## What you may do

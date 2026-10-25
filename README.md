@@ -11,11 +11,14 @@
 [![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
 [![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab)
 [![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/ai-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/ai-lab)
+[![Website](https://img.shields.io/badge/website-live-22C55E?style=flat-square&logo=githubpages&logoColor=white)](https://kathiriyahardik.github.io/ai-lab/)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-22C55E?style=flat-square)](LICENSE)
 [![Content: CC BY-NC 4.0](https://img.shields.io/badge/content-CC_BY--NC_4.0-EF9421?style=flat-square)](LICENSE-CONTENT.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Hardik_Kathiriya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hardikkathiriya/)
 
 ### Practical AI agents for real work, built in public and explained simply.
+
+**🌐 [Visit the lab's website](https://kathiriyahardik.github.io/ai-lab/)**: watch each tool run, step by step
 
 [Roadmap](#%EF%B8%8F-roadmap) · [See it in action](#-see-it-in-action) · [Start here](#-start-here) · [Skills covered](#-skills-this-lab-covers) · [How each project is built](#-how-each-project-is-built) · [Follow along](#-follow-along)
 
@@ -161,6 +164,7 @@ Every project follows the same five steps, so you always know where to look:
 ```text
 ai-lab/
 ├── assets/                    ← lab banner and gallery screenshots
+├── docs/                      ← the lab's website (GitHub Pages)
 └── projects/
     ├── 01-ai-job-tracker/     ✅ live
     ├── 02-job-fit-checker/    ✅ live
