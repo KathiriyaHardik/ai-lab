@@ -11,7 +11,8 @@
 [![Last commit](https://img.shields.io/github/last-commit/KathiriyaHardik/ai-lab?style=flat-square&color=0F172A&label=last%20update)](https://github.com/KathiriyaHardik/ai-lab/commits/main)
 [![Stars](https://img.shields.io/github/stars/KathiriyaHardik/ai-lab?style=flat-square&color=F59E0B)](https://github.com/KathiriyaHardik/ai-lab)
 [![Top language](https://img.shields.io/github/languages/top/KathiriyaHardik/ai-lab?style=flat-square&color=3776AB)](https://github.com/KathiriyaHardik/ai-lab)
-[![License: MIT](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)](LICENSE)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-22C55E?style=flat-square)](LICENSE)
+[![Content: CC BY-NC 4.0](https://img.shields.io/badge/content-CC_BY--NC_4.0-EF9421?style=flat-square)](LICENSE-CONTENT.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Hardik_Kathiriya-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hardikkathiriya/)
 
 ### Practical AI agents for real work, built in public and explained simply.
@@ -184,6 +185,13 @@ Got an idea for a project, or found a bug? [Open an issue](https://github.com/Ka
 
 ---
 
+## 📜 License
+
+- **Code of projects 02 to 07:** [MIT](LICENSE). Use it, change it and build on it, also commercially.
+- **Project 01 (the tracker), all guides, screenshots and sample files:** [CC BY-NC 4.0](LICENSE-CONTENT.md). Free to use, change and share with credit, but not to sell. For commercial use, [ask me](https://www.linkedin.com/in/hardikkathiriya/).
+
+---
+
 <div align="center">
-<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time · <a href="LICENSE">MIT licence</a>: use it, change it, share it</sub>
+<sub>Hardik's AI Lab · built in public from Germany 🇩🇪 · one project at a time · <a href="LICENSE">code: MIT</a> · <a href="LICENSE-CONTENT.md">tracker, guides and images: CC BY-NC 4.0</a></sub>
 </div>

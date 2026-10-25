@@ -127,6 +127,9 @@ If preparation is still *Not Started* when an interview is only days away, the c
 > [!TIP]
 > If you keep your filled-in copy inside this repo, name it **`my-tracker.xlsx`**. Files named `my-*.xlsx` are git-ignored, so your contacts and notes can't be pushed by accident.
 
+> [!NOTE]
+> The tracker is free for your own job search, your studies and personal use under [CC BY-NC 4.0](LICENSE.md). Please don't sell it or put it in paid products. For commercial use, [ask me](https://www.linkedin.com/in/hardikkathiriya/).
+
 <details>
 <summary><b>📆 The 2-minute daily routine</b></summary>
 <br/>
@@ -254,7 +257,8 @@ The test also catches mistakes: running it against a deliberately wrong model pr
 ├── AI_Job_Application_CRM.xlsx   ← the tracker (empty, ready to use)
 ├── build_tracker.py              ← generates the workbook (openpyxl)
 ├── verify_tracker.py             ← end-to-end test in Microsoft Excel
-└── docs/images/                  ← banner + screenshots for this README
+├── docs/images/                  ← banner + screenshots for this README
+└── LICENSE.md                    ← CC BY-NC 4.0: free to use, not to sell
 ```
 
 <details>
